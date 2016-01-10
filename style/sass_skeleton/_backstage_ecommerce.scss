@@ -1,0 +1,128 @@
+
+	
+/* POSTAGE */
+	/* threshold */
+		#threshold_panel .form_field { margin:0px; }
+		
+	/* bands / brackets */
+		#postage_panel .form_field { width:75px; margin:0px 0px 5px; }
+		.pound_label, .bracket_dash { float:left; font-weight:bold; }
+		.pound_label { margin:5px 5px 5px 15px; } 
+		.bracket_dash { margin:5px; }
+		.band_heading_left { float:left; margin-bottom:5px; font-weight:bold; }
+		.band_heading { width:85px; float:left; margin:0px 27px 5px 0px; font-weight:bold; text-align:center; }
+		
+		.admin_left #postage_bracket_submit { margin-top:15px; }
+	
+/* VARIATIONS */
+	/* new types */
+		/* add form */
+			.vtv_form { width:100%; float:left; }
+			.vtv_form .form_field { width:487px; margin-top:0px; }
+			#vtype_submit { width:167px; height:26px; }
+			.vtv_add { height:16px; float:right;  }
+			
+		/* value list */
+			.vtype_vals { float:left; margin-top:15px; }
+			.vtv_row { width:668px; float:left; border:1px solid #676767; margin-top:4px; padding:2px 5px; 
+					   -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px;}
+			.vtv_name { width:300px; float:left; }
+			.vtv_remove { width:100px; float:left; color:#620000; font-weight:bold; cursor:pointer; }
+			.vtv_remove:hover { color:#ff3535; }
+	
+	/* product variation form */
+		.nvtype_left { float:left; margin-right:6px; }	
+		.nvtype_right { float:right; margin-left:6px; }	
+			
+		/* choose the nodes variation types */
+			#nvtype_adder { width:100%; float:left; }
+			.nvtype_selector, .nvar_output { float:left; padding:5px 9px; margin-right:6px; -moz-border-radius:px; -webkit-border-radius:2px; border-radius:2px; }
+			.nvtype_hover:hover { cursor:pointer; }
+			
+		/* variation list */
+			#variation_editor { width:100%; float:left; }
+			#nvar_filter { width:100%; float:left; margin:0px 0px 20px; }
+			#filter_text { width:100%; float:left; margin-bottom:5px; }
+			#nvar_filter #filter { width:669px; float:left; }
+			.nvar_row { width:673px; height:30px; float:left; border:1px solid #676767; margin-top:5px; padding:2px 5px 2px 0px;
+						-moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px;}
+			.nvar_row .form_field { width:40px; margin-left:5px; text-align:center; }
+			#curr_vars_panel .price_field,
+			#curr_vars_panel .sale_field { width:53px; text-align:left; }
+			.nvar_row .pound { float:left; margin:7px 3px 0px 5px; }
+			.nvar_row .nvar_stockmain { float:left; }
+			.nvar_row .nvar_main { float:left; }
+			.nvar_string { width:297px; float:left; margin:7px 0px 0px 5px; }
+			
+			#sale_settings { width:450px; float:left; }
+			#sale_type_heading { width:7px; }
+			#sale_start,
+			#sale_end { width:65px; }
+			#master_sale_price { float:left; }
+			#sale_dates { float:left; } 
+			#master_sale_type { float:left; margin-top:5px; }
+			.sale_field,
+			#sale_start,
+			#sale_end { border:1px solid #cc0000; }
+			.sale_field:focus,
+			#sale_start:focus,
+			#sale_end:focus { border:2px solid #cc0000; }
+			#apply_sale { height:18px; float:left; margin:2px 0px 0px 6px; padding:5px 6px 3px; background-color:#686868; color:#fff; font-weight:bold;
+						  -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; cursor:pointer; }
+			#apply_sale:hover { background-color:#cc0000; }
+			
+			#set_stock { float:right; }
+			#add_stock_button { float:right; margin:-4px 53px 0px 5px; font-size:2.5em; cursor:pointer; }
+			#add_stock_button:hover { color:#008000; }
+			
+			.remove_checkbox,
+			.main_radio { float:left; margin:8px 0px 0px 6px; }
+			
+			.admin_left #save_variations_button { margin-top:20px; }
+			
+		/* base value colours */
+			#price_preview { background-color:#f3c6ff; }
+			#price_adder input { border-color:#cc00ff; }
+			#post_calc_preview { background-color:#cef5ff; }
+			#post_calc_adder input { border-color:#00ccff; }
+			#stock_preview { background-color:#fff5ce; }
+			#stock_adder input { border-color:#ffcc00; }
+			#thresh_preview { background-color:#d2ffea; }
+			#thresh_adder input { border-color:#00ff88; }
+			
+		/* adder form */
+			.nvtype_text { width:55px; float:right; margin-left:6px; padding:6px; font-size:1.2em; font-weight:bold; text-align:center; }
+			.nvtype_text:focus { padding:5px; }
+			.nvtype_select { float:left; border:1px solid #000; margin-right:6px; outline:none; padding:4px;
+							 -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; }
+			#adder_pound { float:right; margin:10px -4px 0px 6px; font-size:1.2em; font-weight:bold; }
+			
+		/* preview */
+			.admin_left #addvar_submit_top { margin-bottom:20px; }
+			#nv_preview { width:100%; float:left; border-top:1px dotted #ccc; border-bottom:1px dotted #ccc; margin:0px 0px 20px;
+						  line-height:1.5em; }
+			#nv_adder {  }
+			.var_column { border-left:1px dotted #ccc; border-right:1px dotted #ccc; padding:5px 7px;
+						  background-color:#fff; }
+	
+/* VOUCHERS */
+	.voucher_create_row { width:100%; float:left; margin-bottom:10px; }
+	.voucher_field_label { width:100px; float:left; padding:5px 0px; }
+	.voucher_create_row .form_field { width:150px; float:left; margin:0px; font-size:1.2em; }
+	
+	/* voucher type create */
+		#vtn { width:570px; }
+	
+	/* voucher code create */
+		#voucher_id { font-size:1.2em; font-weight:bold; letter-spacing:0.3em; text-align:center; }
+		#voucher_generate { float:left; padding:7px 10px; font-weight:bold; cursor:pointer; }
+			#voucher_generate:hover { color:#181818; }
+		#vtid { width:auto; }
+ 
+	
+	/* current vouchers */
+		.voucher_row { width:668px; float:left; border:1px solid #676767; margin-top:5px; padding:2px 5px;
+					   -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; }
+		.vr_code { width:100px; float:left; }
+		.vr_expires { float:right; margin-right:20px; }
+		.vr_single { width:50px; float:right; }

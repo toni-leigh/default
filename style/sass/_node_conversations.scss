@@ -1,0 +1,55 @@
+.conversations 
+{ 
+	width:$site_content_narrow - 20; float:left; 
+	article 
+	{ 
+		width:$site_content_narrow - 30; height:68px; float:left;
+		overflow:hidden;
+		@extend %background_standback; 
+		margin-bottom:10px; padding:5px; 
+		img { 
+		float:left;
+		margin:5px; }
+		&:hover { @extend %highlight_hover; cursor:pointer; }
+	}
+	.latest_message { 
+		width:$site_content_narrow - 98; float:left;
+		margin:5px; }
+	.cpanel_sel { 
+		@extend %highlight_standout;
+		color:#fff; }
+}
+.my_messages 
+{ 
+	width:$site_content_wide; float:right; 
+	border-left:1px solid rgba($success,1); padding:0px 0px 0px 20px; 
+
+	article 
+	{ 
+		width:$site_content_wide - 20; float:left;
+		@extend %standback;
+		margin-bottom:10px; padding:9px; 
+
+		h3 
+		{ 
+			width:$site_content_wide - 80; height:20px;
+			margin-bottom:10px; border-bottom:1px dotted rgba(60,60,60,0.3); padding:5px 0px 8px; 
+			.time { 
+				float:right;
+				color:#aaa; }
+			.unread {
+				margin:5px 5px 5px 0px;
+				padding:2px 5px;
+				@extend %highlight_standout; 
+				font-weight:bold; text-transform:uppercase; }
+		}
+
+		.message_details { 
+			width:$site_content_wide - 78; float:right;
+			padding:0px 0px 10px 10px; }
+
+		.image_column { width:48px; float:left; }
+	}
+}
+
+.message_field { @extend %inplace_textarea; }

@@ -1,0 +1,33 @@
+.admin_map { width:679px; height:499px; float:left; }  /* map dimensions must be odd for acurate centering with single pixel cross hair */
+
+.cross_hair { width:45px; height:45px; float:left; position:relative; z-index:100000;
+              margin:-272px 317px 0px; /* padding:227px 327px;  */
+			  background-image:url('/img/sprite.png'); background-position:0px 0px;
+			  pointer-events:none; }
+			  
+#nodeform_map_panel p { font-size:0.9em; }
+
+.map_button { 
+	height:14px; float:left;  
+	background-color:#ccc;
+	border:1px solid #181818; margin:2px 0px; padding:5px; border-radius:2px; moz-border-radius:2px; webkit-border-radius:2px;
+	font-weight:bold; text-align:center; }
+.map_button:hover { background-color:#181818; color:#fff; cursor:pointer; }
+
+.map_remove { float:right; }
+.map_remove:hover { background-color:#ff3535; color:#fff; cursor:pointer; } 
+
+.map_control_row { width:100%; float:left; margin-bottom:10px; }
+#latitude { width:200px; margin:0px 5px; }
+#longitude { width:200px; margin:0px 5px; }
+#map_search_field { width:565px; float:right; }
+#map_search { width:90px; float:left; }
+
+.latlng_label,
+.on_map {  float:left; margin:6px 0px 0px; }
+.latlng_label { width:70px; text-align:right; }
+.on_map { width:80px; color:#ff3535; }
+.is_visible { display:block; }
+.is_not_visible { display:none; }
+
+#map_activate { float:left; margin:8px 0px 0px 4px; }

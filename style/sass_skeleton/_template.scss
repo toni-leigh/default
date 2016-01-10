@@ -1,0 +1,118 @@
+/* 
+	contains the styles for template/frame views/* 
+	certain styles may be over-ridden in backstage_overrides in order to 
+	change things for the admin area
+*/	
+
+/* master centring */
+	.frame_centre,
+	#heading,
+	.nav,
+	.content{ width:$site_width; margin:0px auto; }
+
+	.htop,
+	footer,
+	nav { position:relative; left:0px; right:0px; }	
+
+/* common frontend special buttons */
+	.back_stage_toggle { 
+		float:right; 
+		margin-top:0px; padding:10px 12px 10px; }
+	#logout_submit { 
+		float:right; 
+		margin:0px; padding:7px 18px 7px; }
+	#login_submit { margin:5px 10px 0px; padding:1px 3px; }
+
+/* header */
+	.htop 
+	{ 
+		position:fixed; z-index:10;
+		top:0; right:0; left:0;
+		
+		.frame_centre { 
+			width:$site_width - 10; height:36px;
+			padding:5px;
+			 }
+	}	
+	header { margin:20px auto; }
+
+/* lists common */
+	/* filter */
+		#filter_heading { 
+			float:left; 
+			padding:7px 5px 5px 0px; 
+			color:rgba(75,75,75,1); font-size:1.1rem; font-weight:bold; text-transform:uppercase; }
+		#filter { width:400px; float:left; }
+
+	/* master list */ 
+		#list { 
+			width:980px; float:left;
+			margin:0px 0px 20px -10px; }
+
+/* navigation */
+	%nav
+	{
+		width:450px;
+		li { float:left; margin-top:10px; }
+		a {
+			margin:10px 0px;
+			color:$white; font-size:1.5rem; 
+			text-transform:uppercase; }
+		a:hover { text-decoration:underline; }
+	}
+	.anon_nav 
+	{ 
+		
+		float:left;
+		li { text-align:left; margin-right:10px;  }
+	}
+	.user_nav 
+	{ 
+		
+		float:right;
+		li { text-align:right; margin-left:10px;  }
+	}
+
+/* search */
+
+
+/* content */
+	.content { 
+		margin:20px auto;
+		font-size:1.4rem; }
+	#details_left { width:$site_content_wide; float:left; }
+	#details_right { width:$site_content_narrow; float:right; }
+
+	.node_panel { 
+		width:$site_width - 42px; float:left;
+		border:1px solid rgba($success,1); margin-bottom:20px; padding:20px; }
+    .inner_content { 
+    	width:$site_content_wide - 42px; float:left; 
+    	border-right:1px solid rgba($success,1); padding:0px 20px 0px 0px; }
+    .social_images { width:$site_content_narrow - 20; float:right; }
+
+/* footer */
+	footer 
+	{ 
+		height:40px;
+		padding-top:5px;
+		 
+		.frame_centre { height:40px;  }
+	}
+
+/* scrollers */
+	#scrollers { float:right; }
+	#scroll_intro,
+	.scr_divider { display:none; }
+	#scrollers .sprite { background-image:none; }
+	.scr,
+	.scr_deact { 
+		float:left; 
+		margin-left:5px; padding:7px 10px; 
+		text-transform:uppercase; }
+	.scr 
+	{ 
+		 
+		&:hover {  }
+	}
+	.scr_deact {  }

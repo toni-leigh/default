@@ -1,0 +1,21 @@
+.looking_for { 
+	width:660px; float:left; 
+	padding:10px;
+	@extend %highlight_standback; }
+.looking_for a { width:660px; float:left; margin:9px 0px 2px; }
+.looking_for a:hover { text-decoration:underline; }
+
+.admin_form 
+{
+	input[type=text],
+	select { margin-bottom:10px; }
+	input[type=text] { width:670px; }
+	select { width:680px; }	
+	label { width:680px; float:left; margin-top:25px; }
+}
+	
+.char_counter { float:right; font-weight:bold; }
+.chars_ok { color:rgba($success,1); }
+.chars_low { color:rgba($fail,1); }
+
+.mceEditor { float:left; }

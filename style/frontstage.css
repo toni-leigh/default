@@ -1,0 +1,1229 @@
+/* 
+	this file defines common styles used throughout the entire application
+	certain styles may be over-ridden in backstage_overrides in order to 
+	change things for the admin area
+*/
+/* line 17, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* colours */
+/* define as hex, rgb/a functions accept this */
+/* other variables */
+/* fonts */
+/* headings */
+/* global tags */
+/* line 51, sass/_common.scss */
+body {
+  margin: 0px auto;
+  color: #181818;
+  font-family: enigma2-webfont;
+}
+
+/* line 54, sass/_common.scss */
+html {
+  overflow-y: scroll;
+  font-size: 10px;
+  background-position: top center;
+}
+
+/* buttons */
+/* line 62, sass/_common.scss */
+button,
+input[type=submit],
+.action {
+  background-color: rgba(60, 60, 60, 0.75);
+  cursor: pointer;
+  border: 1px solid #3c3c3c;
+  -webkit-box-shadow: inset 0 0 2px 1px #3498db;
+  -moz-box-shadow: inset 0 0 2px 1px #3498db;
+  box-shadow: inset 0 0 2px 1px #3498db;
+  color: white;
+  font-family: inherit;
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 70, sass/_common.scss */
+button:hover,
+input[type=submit]:hover,
+.action:hover {
+  background-color: #181818;
+  -webkit-box-shadow: inset 0 0 0 1px white;
+  -moz-box-shadow: inset 0 0 0 1px white;
+  box-shadow: inset 0 0 0 1px white;
+}
+
+/* links */
+/* line 77, sass/_common.scss */
+a {
+  color: #181818;
+  text-decoration: none;
+}
+
+/* line 80, sass/_common.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* text styles */
+/* line 83, sass/_common.scss */
+em {
+  font-style: italic;
+}
+
+/* line 84, sass/_common.scss */
+p {
+  width: 100%;
+  float: left;
+  margin: 0px 0px 10px;
+  line-height: 2.4rem;
+}
+
+/* line 88, sass/_common.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 89, sass/_common.scss */
+.highlight {
+  text-decoration: underline;
+}
+
+/* common classes */
+/* line 92, sass/_common.scss */
+.fail {
+  background-color: #e72b00;
+}
+
+/* line 93, sass/_common.scss */
+.hide {
+  visibility: hidden;
+}
+
+/* line 94, sass/_common.scss */
+.hidden {
+  display: none;
+}
+
+/* line 95, sass/_common.scss */
+.hide_text {
+  font-size: 0;
+}
+
+/* line 96, sass/_common.scss */
+.message {
+  width: 940px;
+  float: left;
+  margin: 0px 0px 20px;
+  padding: 10px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+/* line 101, sass/_common.scss */
+.separator {
+  float: left;
+  margin: 4px 8px;
+}
+
+/* line 102, sass/_common.scss */
+#skip_link {
+  height: 0px;
+  float: left;
+}
+
+/* line 104, sass/_common.scss */
+.sprite,
+.jw_controlbar .jw_controlbar {
+  background-image: url("/img/sprite.png");
+}
+
+/* line 105, sass/_common.scss */
+.success {
+  background-color: #3498db;
+}
+
+/* form fields */
+/* line 108, sass/_common.scss */
+label {
+  float: left;
+  margin: 5px 0px;
+}
+
+/* line 112, sass/_common.scss */
+input[type=text],
+input[type=password],
+select {
+  float: left;
+  border: 1px solid #181818;
+  padding: 4px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 117, sass/_common.scss */
+input[type=text]:focus,
+input[type=password]:focus,
+select:focus {
+  border: 2px solid #181818;
+  padding: 3px;
+}
+
+/* line 119, sass/_common.scss */
+#phone_number {
+  position: absolute;
+  top: -10000px;
+}
+
+/* line 3, sass/_extends.scss */
+button:focus,
+input[type=submit]:focus,
+.action:focus, button:active,
+input[type=submit]:active,
+.action:active {
+  outline: 1px solid #3498db;
+}
+
+/* inactive or greyed out */
+/* line 23, sass/_extends.scss */
+.scr_deact {
+  color: #b4b4b4;
+  background-color: #eeeeee;
+}
+
+/* highlighted */
+/* selected or highlighted elements */
+/* line 34, sass/_extends.scss */
+.blog_panel h2, .calendar_panel h2, .event_panel h2, .user_panel h2, .nsel, h1, .conversations .cpanel_sel, .my_messages article h3 .unread, .tab_sel, .scrubber .ui-slider-range, .play:hover, .pause:hover, .stop:hover, #already_in a:hover {
+  color: white;
+  background-color: #3498db;
+}
+/* line 36, sass/_extends.scss */
+.blog_panel h2 a, .calendar_panel h2 a, .event_panel h2 a, .user_panel h2 a, .nsel a, h1 a, .conversations .cpanel_sel a, .my_messages article h3 .unread a, .tab_sel a, .scrubber .ui-slider-range a, .play:hover a, .pause:hover a, .stop:hover a, #already_in a:hover a {
+  color: white;
+}
+
+/* hovered elements, not selected */
+/* hovered elements, not selected */
+/* line 46, sass/_extends.scss */
+.n:hover, .scr:hover, .conversations article:hover, .tab:hover {
+  color: white;
+  background-color: rgba(52, 152, 219, 0.5);
+}
+/* line 48, sass/_extends.scss */
+.n:hover a, .scr:hover a, .conversations article:hover a, .tab:hover a {
+  color: white;
+}
+
+/* hovered elements, not selected */
+/* line 52, sass/_extends.scss */
+.user_panel, .viewed {
+  color: #181818;
+  border: 1px solid #3498db;
+}
+/* line 54, sass/_extends.scss */
+.user_panel a, .viewed a {
+  color: #181818;
+}
+
+/* normal */
+/* selected or highlighted elements */
+/* hovered elements, not selected */
+/* line 65, sass/_extends.scss */
+.scr, .con_type_panel h2, .tab, .jw_controlbar .jw_controlbar {
+  color: white;
+  background-color: rgba(60, 60, 60, 0.7);
+}
+
+/* other elements in background */
+/* line 70, sass/_extends.scss */
+.comment, .my_messages article, .stream_panel {
+  color: #3c3c3c;
+  border: 1px solid #3c3c3c;
+}
+
+/* background */
+/* background element overlay */
+/* line 77, sass/_extends.scss */
+.htop .frame_centre, nav .frame_centre, footer .frame_centre {
+  background-color: rgba(60, 60, 60, 0.7);
+}
+
+/* background element background */
+/* line 82, sass/_extends.scss */
+.htop, nav, footer, .con_panel, .conversations article {
+  background-color: rgba(60, 60, 60, 0.45);
+}
+
+/* list panel */
+/* line 88, sass/_extends.scss */
+.blog_panel, .calendar_panel, .event_panel {
+  width: 1060px;
+  float: left;
+  border-bottom: 1px solid #3498db;
+  margin: 0px 10px;
+  padding: 20px 0px;
+}
+/* line 92, sass/_extends.scss */
+.blog_panel .details, .calendar_panel .details, .event_panel .details {
+  width: 580px;
+  float: left;
+  color: #4b4b4b;
+}
+/* line 95, sass/_extends.scss */
+.blog_panel h2, .calendar_panel h2, .event_panel h2 {
+  float: left;
+  margin-bottom: 10px;
+  padding: 7px 8px 6px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+/* line 100, sass/_extends.scss */
+.blog_panel span, .calendar_panel span, .event_panel span {
+  width: 100%;
+  float: left;
+  margin-bottom: 10px;
+}
+/* line 103, sass/_extends.scss */
+.blog_panel img, .calendar_panel img, .event_panel img {
+  float: right;
+}
+
+/* grid panel */
+/* line 108, sass/_extends.scss */
+.user_panel {
+  width: 181px;
+  float: left;
+  margin: 20px 10px 0px;
+  padding: 21px;
+}
+/* line 112, sass/_extends.scss */
+.user_panel h2 {
+  width: 165px;
+  height: 45px;
+  float: left;
+  margin-top: 10px;
+  padding: 7px 8px 6px;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 120, sass/_extends.scss */
+.comment_field, .message_field {
+  width: 700px;
+  height: 150px;
+  float: left;
+  border: 2px solid #181818;
+  margin: 0px;
+  padding: 8px;
+}
+
+	                                            /* 
+	contains the styles for template/frame views/* 
+	certain styles may be over-ridden in backstage_overrides in order to 
+	change things for the admin area
+*/
+/* master centring */
+/* line 11, sass/_template.scss */
+.frame_centre,
+#heading,
+.nav,
+.content {
+  width: 1060px;
+  margin: 0px auto;
+}
+
+/* line 15, sass/_template.scss */
+.htop,
+footer,
+nav {
+  position: relative;
+  left: 0px;
+  right: 0px;
+}
+
+/* common frontend special buttons */
+/* line 18, sass/_template.scss */
+.back_stage_toggle {
+  float: left;
+  margin-top: 0px;
+  padding: 10px 12px 10px;
+}
+
+/* line 21, sass/_template.scss */
+#logout_submit {
+  float: right;
+  margin: 0px;
+  padding: 7px 18px 7px;
+}
+
+/* line 24, sass/_template.scss */
+#login_submit {
+  margin: 5px 10px 0px;
+  padding: 1px 3px;
+}
+
+/* header */
+/* line 28, sass/_template.scss */
+.htop {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+/* line 32, sass/_template.scss */
+.htop .frame_centre {
+  width: 1050px;
+  height: 36px;
+  padding: 5px;
+}
+
+/* line 37, sass/_template.scss */
+header {
+  margin: 20px auto;
+}
+
+/* lists common */
+/* filter */
+/* line 41, sass/_template.scss */
+#filter_heading {
+  float: left;
+  padding: 7px 5px 5px 0px;
+  color: #4b4b4b;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 45, sass/_template.scss */
+#filter {
+  width: 400px;
+  float: left;
+}
+
+/* master list */
+/* line 48, sass/_template.scss */
+#list {
+  width: 980px;
+  float: left;
+  margin: 0px 0px 20px -10px;
+}
+
+/* navigation */
+/* line 54, sass/_template.scss */
+nav {
+  height: 34px;
+  padding: 5px 0px;
+}
+/* line 58, sass/_template.scss */
+nav .frame_centre {
+  height: 34px;
+}
+
+/* line 62, sass/_template.scss */
+.nav {
+  width: 1060px;
+  float: left;
+}
+
+/* line 64, sass/_template.scss */
+.n,
+.nsel {
+  float: left;
+  margin-right: 10px;
+  padding: 10px 12px 7px;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+/* line 72, sass/_template.scss */
+.n:hover,
+.nsel {
+  height: 15px;
+  margin-top: -3px;
+  padding: 13px 12px 12px;
+}
+
+/* search */
+/* content */
+/* line 79, sass/_template.scss */
+.content {
+  margin: 20px auto;
+  font-size: 1.4rem;
+}
+
+/* line 82, sass/_template.scss */
+#details_left {
+  width: 720px;
+  float: left;
+}
+
+/* line 83, sass/_template.scss */
+#details_right {
+  width: 320px;
+  float: right;
+}
+
+/* line 85, sass/_template.scss */
+.node_panel {
+  width: 1060px;
+  float: left;
+  border-bottom: 1px solid #3498db;
+  margin-bottom: 20px;
+  padding: 20px 0px;
+}
+
+/* line 88, sass/_template.scss */
+.inner_content {
+  width: 720px;
+  float: left;
+  border-right: 1px solid #3498db;
+  padding: 0px 20px 0px 0px;
+}
+
+/* line 91, sass/_template.scss */
+.social_images {
+  width: 300px;
+  float: right;
+}
+
+/* footer */
+/* line 95, sass/_template.scss */
+footer {
+  height: 40px;
+  padding-top: 5px;
+}
+/* line 99, sass/_template.scss */
+footer .frame_centre {
+  height: 40px;
+}
+
+/* scrollers */
+/* line 103, sass/_template.scss */
+#scrollers {
+  float: right;
+}
+
+/* line 105, sass/_template.scss */
+#scroll_intro,
+.scr_divider {
+  display: none;
+}
+
+/* line 106, sass/_template.scss */
+#scrollers .sprite {
+  background-image: none;
+}
+
+/* line 108, sass/_template.scss */
+.scr,
+.scr_deact {
+  float: left;
+  margin-left: 5px;
+  padding: 7px 10px;
+  text-transform: uppercase;
+}
+
+/* 
+	contains the styles for template/node views	
+*/
+/* line 1, sass/_node_comments.scss */
+.comment {
+  width: 700px;
+  float: left;
+  margin-bottom: 10px;
+  padding: 9px;
+}
+
+/* line 6, sass/_node_comments.scss */
+.comment_details {
+  width: 643px;
+  float: right;
+  margin-left: 9px;
+}
+/* line 9, sass/_node_comments.scss */
+.comment_details h3 {
+  margin-bottom: 10px;
+  border-bottom: 1px dotted rgba(60, 60, 60, 0.3);
+  padding-bottom: 5px;
+}
+
+/* line 11, sass/_node_comments.scss */
+.image_column {
+  float: left;
+}
+
+/* line 1, sass/_node_connection_buttons.scss */
+.con_buttons {
+  float: right;
+  margin: -10px 15px 0px 0px;
+}
+
+/* line 4, sass/_node_connection_buttons.scss */
+.button_wrapper {
+  float: left;
+  margin: 0px 0px 0px 5px;
+}
+
+/* line 5, sass/_node_connection_buttons.scss */
+.button_wrapper button {
+  margin: 0px;
+}
+
+/* line 7, sass/_node_connection_buttons.scss */
+.block:hover,
+.decline:hover {
+  background-color: #e72b00;
+  color: white;
+}
+
+/* line 8, sass/_node_connection_buttons.scss */
+.accept:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+/* line 1, sass/_node_connection_lists.scss */
+.friends {
+  width: 1060px;
+  float: left;
+}
+
+/* line 2, sass/_node_connection_lists.scss */
+.con_type_panel {
+  width: 950px;
+  float: left;
+  margin-bottom: 15px;
+}
+
+/* line 5, sass/_node_connection_lists.scss */
+.con_type_panel h2 {
+  float: left;
+  margin-bottom: 5px;
+  padding: 4px 7px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 10, sass/_node_connection_lists.scss */
+.con_panel {
+  width: 100%;
+  height: 60px;
+  float: left;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+/* line 14, sass/_node_connection_lists.scss */
+.con_img {
+  width: 60px;
+  float: left;
+  margin-right: 5px;
+}
+
+/* line 16, sass/_node_connection_lists.scss */
+.con_name {
+  width: 500px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+/* line 19, sass/_node_connection_lists.scss */
+.con_desc {
+  width: 500px;
+  float: left;
+}
+
+/* line 1, sass/_node_flag.scss */
+.flag {
+  color: #781818;
+  float: right;
+}
+
+/* line 2, sass/_node_flag.scss */
+.flag:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* line 1, sass/_node_headings.scss */
+h1 {
+  width: 1044px;
+  float: left;
+  padding: 7px 8px 6px;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+
+/* line 2, sass/_node_headings.scss */
+h2 {
+  font-family: enigma2-webfont;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* line 1, sass/_node_gallery_small.scss */
+.main_image {
+  margin-bottom: 20px;
+}
+
+/* line 1, sass/_node_gallery_large.scss */
+.thumb {
+  margin-right: 20px;
+}
+
+/* line 2, sass/_node_gallery_large.scss */
+.images .thumb:nth-child(5n) {
+  margin-right: 0px;
+}
+
+/* line 1, sass/_node_map.scss */
+.frontstage_map {
+  width: 1060px;
+  height: 600px;
+  float: left;
+  margin: 0px auto;
+}
+
+/* line 2, sass/_node_conversations.scss */
+.conversations {
+  width: 300px;
+  float: left;
+}
+/* line 5, sass/_node_conversations.scss */
+.conversations article {
+  width: 290px;
+  height: 68px;
+  float: left;
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+/* line 10, sass/_node_conversations.scss */
+.conversations article img {
+  float: left;
+  margin: 5px;
+}
+/* line 13, sass/_node_conversations.scss */
+.conversations article:hover {
+  cursor: pointer;
+}
+/* line 15, sass/_node_conversations.scss */
+.conversations .latest_message {
+  width: 222px;
+  float: left;
+  margin: 5px;
+}
+/* line 18, sass/_node_conversations.scss */
+.conversations .cpanel_sel {
+  color: #fff;
+}
+
+/* line 23, sass/_node_conversations.scss */
+.my_messages {
+  width: 720px;
+  float: right;
+  border-left: 1px solid #3498db;
+  padding: 0px 0px 0px 20px;
+}
+/* line 28, sass/_node_conversations.scss */
+.my_messages article {
+  width: 700px;
+  float: left;
+  margin-bottom: 10px;
+  padding: 9px;
+}
+/* line 34, sass/_node_conversations.scss */
+.my_messages article h3 {
+  width: 640px;
+  height: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px dotted rgba(60, 60, 60, 0.3);
+  padding: 5px 0px 8px;
+}
+/* line 37, sass/_node_conversations.scss */
+.my_messages article h3 .time {
+  float: right;
+  color: #aaa;
+}
+/* line 40, sass/_node_conversations.scss */
+.my_messages article h3 .unread {
+  margin: 5px 5px 5px 0px;
+  padding: 2px 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 47, sass/_node_conversations.scss */
+.my_messages article .message_details {
+  width: 642px;
+  float: right;
+  padding: 0px 0px 10px 10px;
+}
+/* line 51, sass/_node_conversations.scss */
+.my_messages article .image_column {
+  width: 48px;
+  float: left;
+}
+
+/* line 1, sass/_node_tabs.scss */
+#node_tabs {
+  width: 660px;
+  float: left;
+}
+
+/* line 3, sass/_node_tabs.scss */
+.tab,
+.tab_sel {
+  float: left;
+  margin-right: 5px;
+  padding: 7px 10px;
+  text-transform: uppercase;
+}
+
+/* line 2, sass/_node_stream.scss */
+.stream_panel {
+  width: 708px;
+  float: left;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+/* line 7, sass/_node_stream.scss */
+.stream_panel h2 {
+  width: 608px;
+  float: left;
+  margin: 0px 5px 8px;
+  font-size: 1.2rem;
+}
+/* line 12, sass/_node_stream.scss */
+.stream_panel h2 a {
+  font-weight: bold;
+}
+/* line 14, sass/_node_stream.scss */
+.stream_panel h2 a:hover {
+  text-decoration: underline;
+}
+
+/* line 20, sass/_node_stream.scss */
+.actor_image {
+  float: left;
+}
+
+/* line 21, sass/_node_stream.scss */
+.target_image {
+  float: right;
+}
+
+/* line 1, sass/_node_videos.scss */
+#vid_player {
+  width: 720px;
+  height: 455px;
+}
+
+/* line 2, sass/_node_videos.scss */
+.jw_controlbar {
+  width: 720px;
+  height: 30px;
+  float: left;
+  margin: 2px 0px 20px;
+}
+
+/* line 5, sass/_node_videos.scss */
+.jw_controlbar .jw_controlbar {
+  cursor: pointer;
+}
+
+/* line 12, sass/_node_videos.scss */
+.play,
+.pause,
+.stop,
+.fullscreen,
+.mute,
+.unmute,
+.volume {
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+
+/* line 13, sass/_node_videos.scss */
+.pause {
+  display: none;
+}
+
+/* line 15, sass/_node_videos.scss */
+.currenttime,
+.totaltime {
+  width: 80px;
+  height: 18px;
+  float: left;
+  padding: 6px 0px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 19, sass/_node_videos.scss */
+.scrubber {
+  width: 380px;
+  float: left;
+}
+
+/* line 20, sass/_node_videos.scss */
+.scrubber .ui-slider-range {
+  height: 30px;
+  float: left;
+}
+
+/* line 23, sass/_node_videos.scss */
+.scrubber .ui-slider-handle {
+  height: 58px;
+  float: left;
+  cursor: pointer;
+}
+
+/* line 28, sass/_node_videos.scss */
+.jw_controlbar .currenttime,
+.jw_controlbar .totaltime,
+.jw_controlbar .scrubber {
+  background-image: none;
+}
+
+/* line 30, sass/_node_videos.scss */
+.play {
+  background-position: -165px -0px;
+}
+
+/* line 31, sass/_node_videos.scss */
+.play:hover {
+  background-position: -165px -30px;
+}
+
+/* line 33, sass/_node_videos.scss */
+.pause {
+  background-position: -195px -0px;
+}
+
+/* line 34, sass/_node_videos.scss */
+.pause:hover {
+  background-position: -195px -30px;
+}
+
+/* line 36, sass/_node_videos.scss */
+.stop {
+  background-position: -225px -0px;
+}
+
+/* line 37, sass/_node_videos.scss */
+.stop:hover {
+  background-position: -225px -30px;
+}
+
+/* line 39, sass/_node_videos.scss */
+.fullscreen {
+  background-position: 0px -0px;
+}
+
+/* line 40, sass/_node_videos.scss */
+.fullscreen:hover {
+  background-position: 0px -0px;
+}
+
+/* line 42, sass/_node_videos.scss */
+.mute {
+  background-position: 0px -0px;
+}
+
+/* line 43, sass/_node_videos.scss */
+.mute:hover {
+  background-position: 0px -0px;
+}
+
+/* line 45, sass/_node_videos.scss */
+.unmute {
+  background-position: 0px -0px;
+}
+
+/* line 46, sass/_node_videos.scss */
+.unmute:hover {
+  background-position: 0px -0px;
+}
+
+/* line 48, sass/_node_videos.scss */
+.another_video {
+  width: 720px;
+  float: left;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+/* line 1, sass/_node_voting.scss */
+.vote_buttons {
+  float: right;
+  margin: -1px -1px 0px 0px;
+}
+
+/* line 7, sass/_node_voting.scss */
+.vote_up,
+.vote_down,
+.cant_vote,
+.not_voted {
+  width: 24px;
+  height: 24px;
+  float: left;
+  font-size: 0;
+}
+
+/* line 11, sass/_node_voting.scss */
+.vote_up,
+.cant_vote_up {
+  background-position: -45px -60px;
+}
+
+/* line 13, sass/_node_voting.scss */
+.vote_down,
+.cant_vote_down {
+  background-position: -69px -60px;
+  margin-left: 7px;
+}
+
+/* line 16, sass/_node_voting.scss */
+.vote_up:hover {
+  background-position: -45px -108px;
+  cursor: pointer;
+}
+
+/* line 17, sass/_node_voting.scss */
+.vote_down:hover {
+  background-position: -69px -108px;
+  cursor: pointer;
+}
+
+/* line 18, sass/_node_voting.scss */
+.voted_up {
+  background-position: -45px -84px;
+}
+
+/* line 19, sass/_node_voting.scss */
+.voted_down {
+  background-position: -69px -84px;
+}
+
+/* 
+	any styles to be set specifically per node type
+*/
+/* blog */
+/* line 9, sass/_node_types.scss */
+.blog_panel h2 {
+  font-size: 1.8rem;
+}
+
+/* calendar */
+/* line 16, sass/_node_types.scss */
+.calendar_panel h2 {
+  font-size: 1.8rem;
+}
+
+/* event */
+/* line 23, sass/_node_types.scss */
+.event_panel h2 {
+  font-size: 1.8rem;
+}
+
+/* group */
+/* page */
+/* product */
+/* user */
+/* line 40, sass/_node_types.scss */
+.user_panel h2 {
+  font-size: 1.8rem;
+}
+
+/* 
+	styles for individual pages can be over-ridden here
+*/
+/* 
+	Basket and Order Success (these styles are deliberately seperate as an order success page should probably look distinctly
+	different from a basket page) 
+*/
+/* line 9, sass/_individual_pages.scss */
+.oirow,
+.birow {
+  width: 100%;
+  float: left;
+  margin-bottom: 5px;
+}
+
+/* Basket */
+/* NB see Basket and Order Success section above */
+/* Contact */
+/* line 18, sass/_individual_pages.scss */
+.contact_form {
+  width: 700px;
+  float: left;
+}
+/* line 20, sass/_individual_pages.scss */
+.contact_form h2 {
+  width: 100%;
+  float: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+/* line 23, sass/_individual_pages.scss */
+.contact_form input[type=text] {
+  width: 690px;
+}
+/* line 24, sass/_individual_pages.scss */
+.contact_form h3 {
+  width: 100%;
+  float: left;
+  margin: 5px 0px;
+  font-weight: bold;
+}
+
+/* line 30, sass/_individual_pages.scss */
+.contact_name,
+.contact_email {
+  margin-bottom: 20px;
+}
+
+/* line 31, sass/_individual_pages.scss */
+.contact_details {
+  width: 240px;
+  float: right;
+}
+
+/* Login & Register */
+/* line 37, sass/_individual_pages.scss */
+#page_login label,
+#page_register label {
+  width: 500px;
+  float: left;
+  margin: 0px 210px 20px;
+  font-size: 1.5em;
+}
+/* line 40, sass/_individual_pages.scss */
+#page_login input[type=text],
+#page_login input[type=password],
+#page_register input[type=text],
+#page_register input[type=password] {
+  width: 500px;
+  height: 30px;
+  float: left;
+  margin: 0px 210px 20px;
+  padding: 10px 15px;
+  font-size: 1.5em;
+}
+/* line 44, sass/_individual_pages.scss */
+#page_login input[type=text]:focus,
+#page_login input[type=password]:focus,
+#page_register input[type=text]:focus,
+#page_register input[type=password]:focus {
+  padding: 9px 14px;
+}
+/* line 46, sass/_individual_pages.scss */
+#page_login input[type=submit],
+#page_register input[type=submit] {
+  width: 534px;
+  height: 50px;
+  float: left;
+  margin: 0px 210px 20px;
+  padding: 10px 15px;
+  font-size: 1.5em;
+}
+
+/* line 53, sass/_individual_pages.scss */
+#already_in {
+  width: 490px;
+  float: left;
+  margin: 20px 175px 40px;
+  padding: 30px 18px;
+  font-size: 1.2em;
+  text-align: center;
+}
+/* line 59, sass/_individual_pages.scss */
+#already_in a {
+  padding: 4px 6px;
+}
+
+/* Order Failed */
+/* line 66, sass/_individual_pages.scss */
+#order_failed_link {
+  width: 100%;
+  float: left;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* Order Success */
+/* NB see Basket and Order Success section above */

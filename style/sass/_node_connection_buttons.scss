@@ -1,0 +1,8 @@
+.con_buttons { 
+	float:right; 
+	margin:-10px 15px 0px 0px; }
+.button_wrapper { float:left; margin:0px 0px 0px 5px; }
+.button_wrapper button { margin:0px; } 
+.block:hover,
+.decline:hover { background-color:rgba($fail,1); color:rgba($white,1); }
+.accept:hover { background-color:rgba($success,1); color:rgba($white,1); }

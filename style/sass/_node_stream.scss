@@ -1,0 +1,21 @@
+.stream_panel 
+{ 
+	width:$site_content_wide - 12; float:left;
+	margin-bottom:10px; padding:5px;
+	@extend %standback; 
+	h2 
+	{ 
+		width:$site_content_wide - 112; float:left; 
+		margin:0px 5px 8px; 
+		font-size:1.2rem;
+		a 
+		{ 
+			font-weight:bold;
+			&:hover { text-decoration:underline; }
+		}    	
+		
+	}
+}
+.viewed { @extend %highlight_standback; }
+.actor_image { float:left; }
+.target_image { float:right; }

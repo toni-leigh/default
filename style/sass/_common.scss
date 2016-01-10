@@ -1,0 +1,125 @@
+/* 
+	this file defines common styles used throughout the entire application
+	certain styles may be over-ridden in backstage_overrides in order to 
+	change things for the admin area
+*/
+
+@import "compass/css3";
+
+@import "compass/reset";
+
+@import "compass/utilities/sprites";
+@import "sprite/*.png";
+@include all-sprite-sprites;
+
+/* colours */
+	/* define as hex, rgb/a functions accept this */
+	$dark_grey:#181818;
+	$mid_grey:#3c3c3c;
+	$light_grey:#b4b4b4;
+	$very_light_grey:#eee;
+	$white:#fff;
+
+	$bright_orange:#e6a000;
+	$dull_orange:#aa6400;
+
+	$red:#e72b00;
+	$green:#00a000;
+	$blue:#3498db;	
+
+
+	$success:$blue;
+	$fail:$red;
+
+/* other variables */
+	$site_width:1060px;
+	$site_content_wide:720px;
+	$site_content_narrow:320px;
+
+/* fonts */
+	@mixin body_font()
+	{
+		color:rgba($dark_grey,1); font-family:enigma2-webfont;
+	}
+
+/* headings */
+	@mixin main_heading()
+	{
+		width:$site_width - 16; float:left; 
+		padding:7px 8px 6px;
+    	@extend %highlight_standout; font-size:2.2rem;
+		text-transform:uppercase;
+	}
+
+/* global tags */
+	body { 
+		margin:0px auto; 
+		@include body_font(); }
+	html { 
+		overflow-y: scroll; font-size:10px;
+		background-position:top center; }
+
+/* buttons */
+	button,
+	input[type=submit],
+	.action
+	{
+		background-color:rgba($mid_grey,0.75); cursor:pointer;
+		border:1px solid rgba($mid_grey,1);
+		@include box_shadow(inset 0 0 2px 1px rgba($blue,1));
+		color:rgba($white,1); font-family:inherit; font-size:1.4rem;	
+		text-align:center; text-transform:uppercase;
+
+		&:focus { @extend %focus_highlight; }
+		&:hover { 
+			background-color:rgba($dark_grey,1);
+			@include box_shadow(inset 0 0 0 1px rgba($white,1)); }
+		&:active { @extend %focus_highlight; }
+	}
+
+/* links */
+	a { 
+		color:rgba($dark_grey,1); 
+		text-decoration:none; }
+	a:hover { text-decoration:underline; }
+
+/* text styles */
+	em { font-style:italic; }
+	p { 
+		width:100%; float:left; 
+		margin:0px 0px 10px; 
+		line-height:2.4rem; }
+	strong { font-weight:bold; }
+	.highlight { text-decoration:underline; }
+
+/* common classes */
+	.fail { background-color:rgba($fail,1); }
+	.hide { visibility:hidden; }
+	.hidden { display:none; }
+	.hide_text { font-size:0; }
+	.message { 
+		width:940px; float:left; 
+		margin:0px 0px 20px; padding:10px; 
+		color:rgba($white,1); font-size:1.2em; font-weight:bold; line-height:1.2em;
+		text-align:center; }
+	.separator { float:left; margin:4px 8px; }
+	#skip_link { height:0px; float:left; }
+	.sprite,
+	.jw_controlbar .jw_controlbar { background-image:url('/img/sprite.png'); }
+	.success { background-color:rgba($success,1); }
+
+/* form fields */
+	label { float:left; margin:5px 0px; }
+	input[type=text],
+	input[type=password],
+	select
+	{ 
+		float:left; 
+		border:1px solid #181818; padding:4px;
+        @include border-radius(2px);
+
+        &:focus { border:2px solid #181818; padding:3px; } 
+    }
+    #phone_number{position:absolute;top:-10000px;}
+	
+

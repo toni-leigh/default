@@ -1,0 +1,26 @@
+.admin_top_nav 
+{ 
+	.frame_centre {
+		width:$site_width - 12; height:28px; 
+		display:block;
+		background-color:rgba(255,255,255,0.9); 
+		border:1px solid #777; margin:5px auto; padding:5px 5px 0px; 
+		font-size:1.4rem; 
+		text-transform:uppercase; }
+}
+.adnav,
+.adnav_sel { 
+	float:left; 
+	margin:0px 5px 5px 0px; padding:5px; }
+
+.admin_nav_spacer { float:left; margin:3px 10px 0px 3px; }
+
+.adnav 
+{ 
+	color:#181818; 
+	&:active { @extend %focus_highlight; }
+	&:focus { @extend %focus_highlight; }
+}
+
+.adnav:hover,
+.adnav_sel { @extend %standout; }

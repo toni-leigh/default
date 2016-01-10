@@ -1,0 +1,72 @@
+/* 
+	styles for individual pages can be over-ridden here
+*/
+/* 
+	Basket and Order Success (these styles are deliberately seperate as an order success page should probably look distinctly
+	different from a basket page) 
+*/
+	.oirow,
+	.birow { 
+		width:100%; float:left; 
+		margin-bottom:5px; }
+
+/* Basket */
+/* NB see Basket and Order Success section above */
+
+/* Contact */
+    .contact_form 
+    { 
+    	width:700px; float:left; 
+    	h2 { 
+	    	width:100%; float:left;
+	    	font-size:1.5rem; font-weight:bold; }
+    	input[type=text] { width:690px; }
+    	h3 { 
+	    	width:100%; float:left; 
+	    	margin:5px 0px;
+	    	font-weight:bold; }
+    }
+    .contact_name,
+    .contact_email { margin-bottom:20px; }
+    .contact_details { width:240px; float:right; } 
+    
+/* Login & Register */
+	#page_login,
+    #page_register
+    {
+    	label { width:500px; float:left; margin:0px 210px 20px; font-size:1.5em; }
+    	input[type=text],
+    	input[type=password] 
+    	{ 
+    		width:500px; height:30px; float:left; 
+    		margin:0px 210px 20px; padding:10px 15px; 
+    		font-size:1.5em; 
+    		&:focus{ padding:9px 14px; }
+    	}	
+    	input[type=submit] { 
+    		width:534px; height:50px; float:left; 
+    		margin:0px 210px 20px; padding:10px 15px; 
+    		font-size:1.5em; }	
+    } 
+	
+	#already_in 
+	{ 
+		width:490px; float:left; 
+		margin:20px 175px 40px; padding:30px 18px; 
+		font-size:1.2em; 
+		text-align:center; 
+		a 
+		{ 
+			padding:4px 6px;
+			&:hover { @extend %highlight_standout; }		
+		}
+	}
+
+/* Order Failed */
+	#order_failed_link { 
+		width:100%; float:left; 
+		font-size:1.5em; 
+		text-align:center; }
+
+/* Order Success */
+/* NB see Basket and Order Success section above */

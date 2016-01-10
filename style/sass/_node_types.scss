@@ -1,0 +1,41 @@
+/* 
+	any styles to be set specifically per node type
+*/
+
+/* blog */
+.blog_panel 
+{ 
+	@extend %list_panel; 
+	h2 { font-size:1.8rem; } 
+}
+
+/* calendar */
+.calendar_panel 
+{ 
+	@extend %list_panel; 
+	h2 { font-size:1.8rem; } 
+}
+
+/* event */
+.event_panel 
+{ 
+	@extend %list_panel; 
+	h2 { font-size:1.8rem; } 
+}
+
+
+/* group */
+
+
+/* page */
+
+
+/* product */
+
+
+/* user */
+.user_panel 
+{ 
+	@extend %grid_panel; 
+	h2 { font-size:1.8rem; } 
+}

@@ -1,0 +1,132 @@
+/* 
+	this file defines common styles used throughout the entire application
+	certain styles may be over-ridden in backstage_overrides in order to 
+	change things for the admin area
+*/
+
+@import "compass/css3";
+
+@import "compass/reset";
+
+@import "compass/utilities/sprites";
+@import "sprite/*.png";
+@include all-sprite-sprites;
+
+/* colours */
+	/* define as hex, rgb/a functions accept this */
+	$base_colour:#dbe8ba;
+	$success:#0f4;
+	$fail:#f40;
+
+	$white:#fff;
+	$very_light_grey:#eee;
+	$light_grey:#ccc;
+	$mid_grey:#888;
+	$dark_grey:#444;
+	$very_dark_grey:#181818;
+	$black:#000;
+
+/* other variables */
+	$site_width:960px;
+	$site_content_wide:640px;
+	$site_content_narrow:300px;
+
+/* fonts */
+
+/* headings */
+
+/* global tags */
+	body 
+	{ 
+		margin:0px auto;  
+	}
+	html 
+	{ 
+		overflow-y: scroll; 
+		background-color:$base_colour;
+		background-position:top center;
+		font-size:10px; 
+	}
+
+/* buttons */
+	button,
+	input[type=submit],
+	.action
+	{
+		cursor:pointer;
+		font-family:inherit; 
+		text-align:center; 
+		text-transform:uppercase;
+
+		&:focus 
+		{ 
+			@extend %focus_highlight; 
+		}
+		&:hover 
+		{ 
+			@extend %hover_highlight; 
+		}
+		&:active 
+		{ 
+			@extend %active_highlight; 
+		}
+	}
+
+/* links */
+	a 
+	{ 
+	}
+	a:hover 
+	{ 
+	}
+
+/* text styles */
+	em 
+	{ 
+		font-style:italic; 
+	}
+	p 
+	{ 
+		width:100%; 
+		float:left; 
+		margin:0px 0px 10px; 
+		line-height:2.4rem; 
+	}
+	strong 
+	{ 
+		font-weight:bold; 
+	}
+	.highlight 
+	{ 
+		text-decoration:underline; 
+	}
+
+/* common classes */
+
+/* form fields */
+	label 
+	{ 
+		float:left; 
+		margin:5px 0px; 
+	}
+	input[type=text],
+	input[type=password],
+	select
+	{ 
+		float:left; 
+		border:1px solid #181818; 
+		padding:4px;
+        @include border-radius(2px);
+
+        &:focus 
+        { 
+        	border:2px solid #181818; 
+        	padding:3px; 
+        } 
+    }
+    #phone_number
+    {
+    	position:absolute;top:-10000px;
+    }
+	
+

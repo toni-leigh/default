@@ -1,0 +1,191 @@
+@import "common.scss";
+
+@import "extends.scss";
+
+@import "backstage_extends.scss";
+
+@import "template.scss";
+
+@import "backstage_override.scss";
+
+@import "backstage_navigation.scss";
+
+@import "backstage_list.scss";
+
+@import "backstage_form.scss";
+
+@import "backstage_map.scss";
+
+@import "backstage_image_upload.scss";
+
+@import "backstage_calendar.scss";
+
+/* general styles */
+	/* readable font */
+		#admin { font-family:arial; }
+
+	/* hide node tabs for admin pages incase db field value is wrong */
+		#admin #node_tabs { display:none; }
+	
+    /* left panel */
+		.admin_left { 
+			width:680px; float:left; 
+			border-right:1px solid #181818; padding-right:19px; }
+		.admin_left h2,
+		#admin_image h2,
+		#admin_calendar h2,
+		#manual h2,
+		.mheading { 
+			width:100%; float:left; 
+			margin:0px;
+			font-size:1.6em; font-weight:bold; }
+		.ad_heading_text { float:left; padding:5px 8px 3px; background-color:#181818; color:#fff; text-transform:uppercase;
+						    }
+		.ad_heading_text:hover { background-color:#181818; }
+		.panel { 
+			width:100%; float:left; 
+			border-top:1px solid #181818; padding-top:20px; }
+			.empty_admin_panel { width:100%; float:left; color:#181818; font-size:1.2em; font-weight:bold; text-align:center; }
+			.panel_details { width:100%; float:left; margin:0px 0px 20px; }
+		.admin_left .submit,
+		#admin_image .submit { margin:0px; }
+		
+		#admin_image,
+		#admin_calendar { width:960px; }
+		
+		#admin_calendar .panel_details { width:966px; }
+		#previous_panel .panel { width:960px; }
+		#previous_heading  { background-color:#888; opacity:0.8; }
+		#previous_heading:hover  { opacity:1.0; }
+		
+		.panel_open,
+		.panel_close { width:30px; height:30px; float:right; margin:0px 0px 20px 0px; cursor:pointer;
+					   -moz-border-radius:1px; -webkit-border-radius:1px; border-radius:1px;
+					   background-color:#181818; }
+		.panel_open { background-position:-75px -30px; }
+		.panel_open:hover,
+		.panel_close:hover { opacity:1; }
+		.panel_close { background-position:-45px -30px; }
+		.panel_closed { display:none; opacity:0; }
+		
+		#previous_show { background-color:#888; }
+		
+		h3 { float:left; padding:20px 0px 10px; font-size:1.2em; font-weight:bold; }
+
+		#local_storage_message 
+		{ 
+			width:209px;
+			display:none; 
+			@extend %highlight_standback; cursor:pointer;
+			padding:10px 15px;
+			&:hover { @extend %highlight_hover; }
+			&:active { @extend %highlight_standout; }
+		}
+		
+	/* right instructions */
+		.admin_instructions { width:240px; float:left; position:relative; z-index:1; border-left:1px solid #181818; margin-left:-1px; padding-left:19px; }
+		.admin_instructions p { font-size:0.9em; }
+
+    .adpanel{width:930px;float:left;margin:0px 0px 10px 0px;}
+    .adinst_panel{width:920px;float:left;margin-bottom:5px;padding:5px;background-color:#f0f0f7;font-size:0.9em;line-height:1.5em;text-align:justify;}
+    .adaction_panel{width:930px;float:left;background-color:#f7f7f7;}
+    .ad_icon{width:24px;height:24px;float:left;background-image:url('/img/sprite.png');opacity:0.5;}
+    .ad_icon:hover{opacity:1.0;}
+    .ad_edit_buttons{float:right;}
+	
+	#show_deletes { float:right; margin:10px 0px 2px; color:#620000; font-weight:bold; cursor:pointer; }
+	#show_deletes:hover { color:#ff3535; }
+		.erow_delete,
+		.ad_ndelete { float:right; visibility:hidden; margin:0px 0px 0px 4px; padding:4px 7px; color:#181818; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; }
+		
+		.ad_ndelete_space { width:56px; height:22px; float:right; }
+		
+	#add_more_to_sequence { float:left; margin:10px 0px 2px; color:#006200; font-weight:bold; cursor:pointer; }
+		#add_more_to_sequence:hover { color:#35ff35; }
+	
+	#adnode_header_row #show_deletes { float:right; margin:0px; }
+	
+/* NODE FORM */
+
+/* CONTACT LIST */
+	.cl { 
+		width:678px; float:left; border:1px solid #888; margin-bottom:20px; 
+		background-color:#f7f7f7; }
+	.cl div{ padding-left:10px; }
+	.cl_heading { width:658px; padding:10px; float:left; background-color: #888; color:#fff; }
+	.cl_time { float:right; border:none; padding:4px 6px; }
+	.cl_name { float:left; border:none; padding:4px 6px 4px 0px; }
+	.cl_contact { width:668px; float:left; border-bottom:1px solid #bbb; padding:10px 0px 10px 10px; }
+	.cl_message { width:668px; float:left; padding:10px 0px; }
+
+	.responded_clicker { 
+		width:104px; float:right; border-radius:3px; moz-border-radius:2px; webkit-border-radius:2px;
+		cursor:pointer; 
+		text-align:center; }
+	.responded { padding:4px 6px 5px;
+		background-color:#888; 
+		color:#eeee00; }
+	.unresponded { border:1px solid #008000; padding:3px 5px 4px;
+		background-color:#e7e7e7; 
+		color:#008000; }
+	.unresponded:hover { background-color:#fff; }
+
+	#unresponded_panel { margin-bottom:0px; }
+	#unresponded_panel .submit { margin-bottom:20px; }
+	
+/* MANUAL */
+	#mantcn_panel a { width:100%; float:left; margin-bottom:5px; font-size:1.1em; }
+	#mantcn_panel span { width:100%; float:left; margin-bottom:15px; font-size:0.9em; }
+	
+	.man_view { width:930px; float:left; margin-bottom:2px; padding:5px 15px 5px;
+				-moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px;
+				font-family:monospace; font-size:0.8em; }
+	.man_view pre { float:left; }
+	#head_open,
+	#head_close,
+	#page_open,
+	#page_close { background-color:#bfc1ff; color:#0004aa; }
+	#header_open,
+	#header_close,
+	#content_open,
+	#content_close,
+	#footer_open,
+	#footer_close,
+	#admin_nav { background-color:#e2bfff; color:#6700bb; }
+	#node_tabs,
+	.node_element { background-color:#fbbfff; color:#880093; }
+	
+	#central_panels { width:962px; }
+	.node_element { float:left; padding:10px 15px; margin:0px 2px 2px 0px;
+					-moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px;
+					text-align:center; }
+	.width_135 { width:105px; }
+	.width_136 { width:106px; }
+	
+	.man_view h3 { float:right; }
+
+/* MISCELLANEOUS */
+	.admisc_link { width:100%; float:left; margin-bottom:10px; }
+    
+/* NEWSLETTER SIGNUPS */
+	#signup_list { width:100%; float:left; margin:15px 0px; }
+    .signup_row { width:100%; float:left; margin:5px 0px; } 
+    .signup_email { width:80%; float:left; } 
+    .signup_time { width:20%; float:rigth; }
+	.signup_count { width:45px; float:left; }
+	.signup_spacer { width:100%; height:1px; float:left; margin:6px 0px; background-color:#888; }
+
+/* NODE FORM */
+    #name_warning{width:100%;float:left;margin:5px 0px;font-weight:bold;}       
+    #node_html_parent { float:left; }
+    
+    .atag_dropdown { width:696px; height:15px; float:left; border:1px solid #888; margin-bottom:2px; padding:2px 1px 1px; }
+    .atag_dropdown:hover { }
+    .unused { border:1px solid #888; }
+    .unused:hover { background-color:#555; cursor:pointer; }
+    .used { opacity:0.4; }
+	
+/* CALENDAR */								   
+	/* add events drop down form */
+	
+	/* calendar */

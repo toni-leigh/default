@@ -1,0 +1,78 @@
+%active_highlight
+{
+	outline:2px solid rgba($success,1);
+}
+%focus_highlight
+{
+	outline:1px solid rgba($success,1);
+}
+%hover_highlight
+{
+	outline:2px solid rgba($success,1);
+}
+
+%noselect
+{
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+%main_heading
+{
+	width:$site_width; float:left; 
+	font-size:4rem;
+	text-transform:uppercase;
+}
+
+/* inactive or greyed out */
+	%inactive
+	{
+		color:rgba($light_grey,1); background-color:rgba($very_light_grey,1);
+	}
+	%greyed
+	{
+		color:rgba($mid_grey,1); background-color:rgba($very_light_grey,1);
+	}
+
+/* list panel */
+%list_panel
+{
+    width:$site_width; float:left;
+    border-bottom:1px solid rgba($success,1); margin:0px; padding:20px 0px;
+
+    .details  { 
+    	width:580px; float:left; 
+    	color:rgba(75,75,75,1); }
+    h2  { 
+    	float:left;
+    	margin-bottom:10px; padding:7px 8px 6px;
+    	color:#fff; font-size:1.2rem; }
+    span  { 
+    	width:100%; float:left;
+     	margin-bottom:10px; }
+    img  { float:right; }
+}
+
+/* grid panel */
+%grid_panel
+{
+    width:181px; float:left;
+    margin:20px 10px 0px; padding:21px;
+
+    h2  { 
+    	width:165px; height:45px; float:left;
+    	margin-top:10px; padding:7px 8px 6px;
+    	color:#fff; text-align:center; vertical-align:middle; }
+}
+
+%inplace_textarea
+{
+	width:$site_content_wide - 20; height:150px; float:left;
+	border:2px solid #181818; margin:0px; padding:8px;
+}
+
+

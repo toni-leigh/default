@@ -1,0 +1,125 @@
+
+%focus_highlight
+{
+	outline:1px solid rgba($success,1);
+}
+%active_highlight
+{
+	outline:2px solid rgba($success,1);
+}
+
+%noselect
+{
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+/* inactive or greyed out */
+	%inactive
+	{
+		color:rgba($light_grey,1); background-color:rgba($very_light_grey,1);
+	}
+	%greyed
+	{
+		color:rgba($mid_grey,1); background-color:rgba($very_light_grey,1);
+	}
+
+/* highlighted */
+	/* selected or highlighted elements */
+	%highlight_standout
+	{
+		color:rgba($white,1); background-color:rgba($success,1);
+		a { color:rgba($white,1); }
+	}
+	/* hovered elements, not selected */
+	%highlight_noticable
+	{
+		color:rgba($dark_grey,1); background-color:rgba($success,0.5);
+		a { color:rgba($dark_grey,1); }
+	}
+	/* hovered elements, not selected */
+	%highlight_hover
+	{
+		color:rgba($white,1); background-color:rgba($success,0.5);
+		a { color:rgba($white,1); }
+	}
+	/* hovered elements, not selected */
+	%highlight_standback
+	{
+		color:rgba($dark_grey,1); border:1px solid rgba($success,1);
+		a { color:rgba($dark_grey,1); }
+	}
+
+/* normal */
+	/* selected or highlighted elements */
+	%standout
+	{
+		color:rgba($white,1); background-color:rgba($dark_grey,1);
+	}
+	/* hovered elements, not selected */
+	%noticable
+	{
+		color:rgba($white,1); background-color:rgba($mid_grey,0.7);
+	}
+	/* other elements in background */
+	%standback
+	{
+		color:rgba($mid_grey,1); border:1px solid rgba($mid_grey,1);
+	}
+
+/* background */
+	/* background element overlay */
+	%background_standout
+	{
+		background-color:rgba($mid_grey,0.7);
+	}
+	/* background element background */
+	%background_standback
+	{
+		background-color:rgba($mid_grey,0.45);
+	}
+
+/* list panel */
+%list_panel
+{
+    width:$site_width; float:left;
+    border-bottom:1px solid rgba($success,1); margin:0px 10px; padding:20px 0px;
+
+    .details  { 
+    	width:580px; float:left; 
+    	color:rgba(75,75,75,1); }
+    h2  { 
+    	float:left;
+    	margin-bottom:10px; padding:7px 8px 6px;
+    	@extend %highlight_standout;
+    	color:#fff; font-size:1.2rem; }
+    span  { 
+    	width:100%; float:left;
+     	margin-bottom:10px; }
+    img  { float:right; }
+}
+
+/* grid panel */
+%grid_panel
+{
+    width:181px; float:left;
+    @extend %highlight_standback; margin:20px 10px 0px; padding:21px;
+
+    h2  { 
+    	width:165px; height:45px; float:left;
+    	margin-top:10px; padding:7px 8px 6px;
+    	@extend %highlight_standout;
+    	color:#fff; text-align:center; vertical-align:middle; }
+}
+
+%inplace_textarea
+{
+	width:$site_content_wide - 20; height:150px; float:left;
+	border:2px solid #181818; margin:0px; padding:8px;
+}
+
+

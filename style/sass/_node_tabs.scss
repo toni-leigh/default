@@ -1,0 +1,12 @@
+#node_tabs { width:660px; float:left; }
+.tab,
+.tab_sel { 
+	float:left; 
+	margin-right:5px; padding:7px 10px; 
+	text-transform:uppercase; }
+.tab 
+{ 
+	@extend %noticable; 
+	&:hover { @extend %highlight_hover; }
+}
+.tab_sel { @extend %highlight_standout; }

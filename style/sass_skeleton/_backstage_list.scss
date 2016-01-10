@@ -1,0 +1,55 @@
+/* filters */
+	#filter_name { width:70px; float:left; padding:7px 0px; }
+	#filter { width:590px; float:left; }	
+
+	#image_filter_name { width:930px; margin:0px 10px 10px; }
+	#image_list_filter { width:930px; float:left; margin:0px 10px 10px; }	
+
+	#admin_tags { float:left; }
+	#show_atag_filter_panel { float:right; margin:15px 0px 1px; color:#008000; font-weight:bold; cursor:pointer; }
+		#show_atag_filter_panel:hover { color:#00c000; }
+	#tag_filters { width:680px; }
+		#and_filter { margin-right:9px; }
+	.filter_type { width:90px; height:15px; float:left; margin:2px 0px 7px 0px; padding:4px 2px; background-color:#181818;
+				   color:#fff; font-weight:bold; text-align:center; 
+				   -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; cursor:pointer; }
+	.ft_unselected { opacity:0.25; }
+	.ft_unselected:hover { opacity:1; }    
+
+/* list */
+#adnode_list_panel
+{
+	label { margin:0px; }
+}
+
+/* mass adjust */
+
+/* create */
+	.create_new_node { 
+		width:239px; float:left;
+		margin-top:0px; padding:12px 0px 11px; 
+		font-size:1.2em; }
+
+#adnode_header_row { width:100%; float:left; margin-bottom:15px; }
+label:hover { cursor:pointer; }
+#master_view_check { float:left; margin:0px 6px 0px 10px; }
+
+.ad_npanel { 
+	width:668px; float:left; 
+	margin-top:5px; }
+.ad_nvisible  { 
+	@extend %highlight_noticable; 
+	border:2px solid rgba($success,1); padding:4px 4px 3px; }
+.ad_ninvisible { 
+	@extend %greyed; 
+	border:1px solid $light_grey; padding:5px 5px 4px; 
+}
+.ad_nname { float:left; margin-top:3px; }
+.ad_nactions { float:right; }
+.ad_nedit_link { float:left; margin-top:3px; padding:0px 5px; }
+.ad_nvisible_check {float:left; margin:4px 6px 0px 4px; }
+
+#undo_mass_adjust { width:100%; float:left; margin:5px 0px; }
+
+#name_filter { width:700px; float:left; }
+#filter_name { float:left; margin-right:10px; padding-top:6px; }

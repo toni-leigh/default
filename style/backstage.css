@@ -1,0 +1,2537 @@
+/* 
+	this file defines common styles used throughout the entire application
+	certain styles may be over-ridden in backstage_overrides in order to 
+	change things for the admin area
+*/
+/* line 17, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* colours */
+/* define as hex, rgb/a functions accept this */
+/* other variables */
+/* fonts */
+/* headings */
+/* global tags */
+/* line 51, sass/_common.scss */
+body {
+  margin: 0px auto;
+  color: #181818;
+  font-family: enigma2-webfont;
+}
+
+/* line 54, sass/_common.scss */
+html {
+  overflow-y: scroll;
+  font-size: 10px;
+  background-position: top center;
+}
+
+/* buttons */
+/* line 62, sass/_common.scss */
+button,
+input[type=submit],
+.action {
+  background-color: rgba(60, 60, 60, 0.75);
+  cursor: pointer;
+  border: 1px solid #3c3c3c;
+  -webkit-box-shadow: inset 0 0 2px 1px #3498db;
+  -moz-box-shadow: inset 0 0 2px 1px #3498db;
+  box-shadow: inset 0 0 2px 1px #3498db;
+  color: white;
+  font-family: inherit;
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 70, sass/_common.scss */
+button:hover,
+input[type=submit]:hover,
+.action:hover {
+  background-color: #181818;
+  -webkit-box-shadow: inset 0 0 0 1px white;
+  -moz-box-shadow: inset 0 0 0 1px white;
+  box-shadow: inset 0 0 0 1px white;
+}
+
+/* links */
+/* line 77, sass/_common.scss */
+a {
+  color: #181818;
+  text-decoration: none;
+}
+
+/* line 80, sass/_common.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* text styles */
+/* line 83, sass/_common.scss */
+em {
+  font-style: italic;
+}
+
+/* line 84, sass/_common.scss */
+p {
+  width: 100%;
+  float: left;
+  margin: 0px 0px 10px;
+  line-height: 2.4rem;
+}
+
+/* line 88, sass/_common.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 89, sass/_common.scss */
+.highlight {
+  text-decoration: underline;
+}
+
+/* common classes */
+/* line 92, sass/_common.scss */
+.fail {
+  background-color: #e72b00;
+}
+
+/* line 93, sass/_common.scss */
+.hide {
+  visibility: hidden;
+}
+
+/* line 94, sass/_common.scss */
+.hidden {
+  display: none;
+}
+
+/* line 95, sass/_common.scss */
+.hide_text {
+  font-size: 0;
+}
+
+/* line 96, sass/_common.scss */
+.message {
+  width: 940px;
+  float: left;
+  margin: 0px 0px 20px;
+  padding: 10px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+/* line 101, sass/_common.scss */
+.separator {
+  float: left;
+  margin: 4px 8px;
+}
+
+/* line 102, sass/_common.scss */
+#skip_link {
+  height: 0px;
+  float: left;
+}
+
+/* line 104, sass/_common.scss */
+.sprite,
+.jw_controlbar .jw_controlbar {
+  background-image: url("/img/sprite.png");
+}
+
+/* line 105, sass/_common.scss */
+.success {
+  background-color: #3498db;
+}
+
+/* form fields */
+/* line 108, sass/_common.scss */
+label {
+  float: left;
+  margin: 5px 0px;
+}
+
+/* line 112, sass/_common.scss */
+input[type=text],
+input[type=password],
+select {
+  float: left;
+  border: 1px solid #181818;
+  padding: 4px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 117, sass/_common.scss */
+input[type=text]:focus,
+input[type=password]:focus,
+select:focus {
+  border: 2px solid #181818;
+  padding: 3px;
+}
+
+/* line 119, sass/_common.scss */
+#phone_number {
+  position: absolute;
+  top: -10000px;
+}
+
+/* line 3, sass/_extends.scss */
+button:focus,
+input[type=submit]:focus,
+.action:focus, button:active,
+input[type=submit]:active,
+.action:active, .adnav:active, .adnav:focus {
+  outline: 1px solid #3498db;
+}
+
+/* inactive or greyed out */
+/* line 23, sass/_extends.scss */
+.scr_deact {
+  color: #b4b4b4;
+  background-color: #eeeeee;
+}
+
+/* line 27, sass/_extends.scss */
+.ad_ninvisible {
+  color: #3c3c3c;
+  background-color: #eeeeee;
+}
+
+/* highlighted */
+/* selected or highlighted elements */
+/* line 34, sass/_extends.scss */
+.nsel, #local_storage_message:active {
+  color: white;
+  background-color: #3498db;
+}
+/* line 36, sass/_extends.scss */
+.nsel a, #local_storage_message:active a {
+  color: white;
+}
+
+/* hovered elements, not selected */
+/* line 40, sass/_extends.scss */
+.ad_nvisible {
+  color: #181818;
+  background-color: rgba(52, 152, 219, 0.5);
+}
+/* line 42, sass/_extends.scss */
+.ad_nvisible a {
+  color: #181818;
+}
+
+/* hovered elements, not selected */
+/* line 46, sass/_extends.scss */
+.n:hover, .scr:hover, #local_storage_message:hover {
+  color: white;
+  background-color: rgba(52, 152, 219, 0.5);
+}
+/* line 48, sass/_extends.scss */
+.n:hover a, .scr:hover a, #local_storage_message:hover a {
+  color: white;
+}
+
+/* hovered elements, not selected */
+/* line 52, sass/_extends.scss */
+.looking_for, #local_storage_message {
+  color: #181818;
+  border: 1px solid #3498db;
+}
+/* line 54, sass/_extends.scss */
+.looking_for a, #local_storage_message a {
+  color: #181818;
+}
+
+/* normal */
+/* selected or highlighted elements */
+/* line 60, sass/_extends.scss */
+.adnav:hover,
+.adnav_sel {
+  color: white;
+  background-color: #181818;
+}
+
+/* hovered elements, not selected */
+/* line 65, sass/_extends.scss */
+.scr {
+  color: white;
+  background-color: rgba(60, 60, 60, 0.7);
+}
+
+/* other elements in background */
+/* background */
+/* background element overlay */
+/* line 77, sass/_extends.scss */
+.htop .frame_centre, nav .frame_centre, footer .frame_centre {
+  background-color: rgba(60, 60, 60, 0.7);
+}
+
+/* background element background */
+/* line 82, sass/_extends.scss */
+.htop, nav, footer {
+  background-color: rgba(60, 60, 60, 0.45);
+}
+
+/* list panel */
+/* grid panel */
+	                                            /* 
+	contains the styles for template/frame views/* 
+	certain styles may be over-ridden in backstage_overrides in order to 
+	change things for the admin area
+*/
+/* master centring */
+/* line 11, sass/_template.scss */
+.frame_centre,
+#heading,
+.nav,
+.content {
+  width: 1060px;
+  margin: 0px auto;
+}
+
+/* line 15, sass/_template.scss */
+.htop,
+footer,
+nav {
+  position: relative;
+  left: 0px;
+  right: 0px;
+}
+
+/* common frontend special buttons */
+/* line 18, sass/_template.scss */
+.back_stage_toggle {
+  float: left;
+  margin-top: 0px;
+  padding: 10px 12px 10px;
+}
+
+/* line 21, sass/_template.scss */
+#logout_submit {
+  float: right;
+  margin: 0px;
+  padding: 7px 18px 7px;
+}
+
+/* line 24, sass/_template.scss */
+#login_submit {
+  margin: 5px 10px 0px;
+  padding: 1px 3px;
+}
+
+/* header */
+/* line 28, sass/_template.scss */
+.htop {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+/* line 32, sass/_template.scss */
+.htop .frame_centre {
+  width: 1050px;
+  height: 36px;
+  padding: 5px;
+}
+
+/* line 37, sass/_template.scss */
+header {
+  margin: 20px auto;
+}
+
+/* lists common */
+/* filter */
+/* line 41, sass/_template.scss */
+#filter_heading {
+  float: left;
+  padding: 7px 5px 5px 0px;
+  color: #4b4b4b;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 45, sass/_template.scss */
+#filter {
+  width: 400px;
+  float: left;
+}
+
+/* master list */
+/* line 48, sass/_template.scss */
+#list {
+  width: 980px;
+  float: left;
+  margin: 0px 0px 20px -10px;
+}
+
+/* navigation */
+/* line 54, sass/_template.scss */
+nav {
+  height: 34px;
+  padding: 5px 0px;
+}
+/* line 58, sass/_template.scss */
+nav .frame_centre {
+  height: 34px;
+}
+
+/* line 62, sass/_template.scss */
+.nav {
+  width: 1060px;
+  float: left;
+}
+
+/* line 64, sass/_template.scss */
+.n,
+.nsel {
+  float: left;
+  margin-right: 10px;
+  padding: 10px 12px 7px;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+/* line 72, sass/_template.scss */
+.n:hover,
+.nsel {
+  height: 15px;
+  margin-top: -3px;
+  padding: 13px 12px 12px;
+}
+
+/* search */
+/* content */
+/* line 79, sass/_template.scss */
+.content {
+  margin: 20px auto;
+  font-size: 1.4rem;
+}
+
+/* line 82, sass/_template.scss */
+#details_left {
+  width: 720px;
+  float: left;
+}
+
+/* line 83, sass/_template.scss */
+#details_right {
+  width: 320px;
+  float: right;
+}
+
+/* line 85, sass/_template.scss */
+.node_panel {
+  width: 1060px;
+  float: left;
+  border-bottom: 1px solid #3498db;
+  margin-bottom: 20px;
+  padding: 20px 0px;
+}
+
+/* line 88, sass/_template.scss */
+.inner_content {
+  width: 720px;
+  float: left;
+  border-right: 1px solid #3498db;
+  padding: 0px 20px 0px 0px;
+}
+
+/* line 91, sass/_template.scss */
+.social_images {
+  width: 300px;
+  float: right;
+}
+
+/* footer */
+/* line 95, sass/_template.scss */
+footer {
+  height: 40px;
+  padding-top: 5px;
+}
+/* line 99, sass/_template.scss */
+footer .frame_centre {
+  height: 40px;
+}
+
+/* scrollers */
+/* line 103, sass/_template.scss */
+#scrollers {
+  float: right;
+}
+
+/* line 105, sass/_template.scss */
+#scroll_intro,
+.scr_divider {
+  display: none;
+}
+
+/* line 106, sass/_template.scss */
+#scrollers .sprite {
+  background-image: none;
+}
+
+/* line 108, sass/_template.scss */
+.scr,
+.scr_deact {
+  float: left;
+  margin-left: 5px;
+  padding: 7px 10px;
+  text-transform: uppercase;
+}
+
+/* 
+	this file defines override styles to change commonly defined things
+	in an admin context
+	it should be used sparingly
+*/
+/* line 3, sass/_backstage_navigation.scss */
+.admin_top_nav .frame_centre {
+  width: 1048px;
+  height: 28px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #777;
+  margin: 5px auto;
+  padding: 5px 5px 0px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+/* line 12, sass/_backstage_navigation.scss */
+.adnav,
+.adnav_sel {
+  float: left;
+  margin: 0px 5px 5px 0px;
+  padding: 5px;
+}
+
+/* line 16, sass/_backstage_navigation.scss */
+.admin_nav_spacer {
+  float: left;
+  margin: 3px 10px 0px 3px;
+}
+
+/* line 19, sass/_backstage_navigation.scss */
+.adnav {
+  color: #181818;
+}
+
+/* filters */
+/* line 2, sass/_backstage_list.scss */
+#filter_name {
+  width: 70px;
+  float: left;
+  padding: 7px 0px;
+}
+
+/* line 3, sass/_backstage_list.scss */
+#filter {
+  width: 590px;
+  float: left;
+}
+
+/* line 5, sass/_backstage_list.scss */
+#image_filter_name {
+  width: 930px;
+  margin: 0px 10px 10px;
+}
+
+/* line 6, sass/_backstage_list.scss */
+#image_list_filter {
+  width: 930px;
+  float: left;
+  margin: 0px 10px 10px;
+}
+
+/* line 8, sass/_backstage_list.scss */
+#admin_tags {
+  float: left;
+}
+
+/* line 9, sass/_backstage_list.scss */
+#show_atag_filter_panel {
+  float: right;
+  margin: 15px 0px 1px;
+  color: #008000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* line 10, sass/_backstage_list.scss */
+#show_atag_filter_panel:hover {
+  color: #00c000;
+}
+
+/* line 11, sass/_backstage_list.scss */
+#tag_filters {
+  width: 680px;
+}
+
+/* line 12, sass/_backstage_list.scss */
+#and_filter {
+  margin-right: 9px;
+}
+
+/* line 13, sass/_backstage_list.scss */
+.filter_type {
+  width: 90px;
+  height: 15px;
+  float: left;
+  margin: 2px 0px 7px 0px;
+  padding: 4px 2px;
+  background-color: #181818;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* line 16, sass/_backstage_list.scss */
+.ft_unselected {
+  opacity: 0.25;
+}
+
+/* line 17, sass/_backstage_list.scss */
+.ft_unselected:hover {
+  opacity: 1;
+}
+
+/* list */
+/* line 22, sass/_backstage_list.scss */
+#adnode_list_panel label {
+  margin: 0px;
+}
+
+/* mass adjust */
+/* create */
+/* line 28, sass/_backstage_list.scss */
+.create_new_node {
+  width: 239px;
+  float: left;
+  margin-top: 0px;
+  padding: 12px 0px 11px;
+  font-size: 1.2em;
+}
+
+/* line 33, sass/_backstage_list.scss */
+#adnode_header_row {
+  width: 100%;
+  float: left;
+  margin-bottom: 15px;
+}
+
+/* line 34, sass/_backstage_list.scss */
+label:hover {
+  cursor: pointer;
+}
+
+/* line 35, sass/_backstage_list.scss */
+#master_view_check {
+  float: left;
+  margin: 0px 6px 0px 10px;
+}
+
+/* line 37, sass/_backstage_list.scss */
+.ad_npanel {
+  width: 668px;
+  float: left;
+  margin-top: 5px;
+}
+
+/* line 40, sass/_backstage_list.scss */
+.ad_nvisible {
+  border: 2px solid #3498db;
+  padding: 4px 4px 3px;
+}
+
+/* line 43, sass/_backstage_list.scss */
+.ad_ninvisible {
+  border: 1px solid #b4b4b4;
+  padding: 5px 5px 4px;
+}
+
+/* line 47, sass/_backstage_list.scss */
+.ad_nname {
+  float: left;
+  margin-top: 3px;
+}
+
+/* line 48, sass/_backstage_list.scss */
+.ad_nactions {
+  float: right;
+}
+
+/* line 49, sass/_backstage_list.scss */
+.ad_nedit_link {
+  float: left;
+  margin-top: 3px;
+  padding: 0px 5px;
+}
+
+/* line 50, sass/_backstage_list.scss */
+.ad_nvisible_check {
+  float: left;
+  margin: 4px 6px 0px 4px;
+}
+
+/* line 52, sass/_backstage_list.scss */
+#undo_mass_adjust {
+  width: 100%;
+  float: left;
+  margin: 5px 0px;
+}
+
+/* line 54, sass/_backstage_list.scss */
+#name_filter {
+  width: 700px;
+  float: left;
+}
+
+/* line 55, sass/_backstage_list.scss */
+#filter_name {
+  float: left;
+  margin-right: 10px;
+  padding-top: 6px;
+}
+
+/* line 1, sass/_backstage_form.scss */
+.looking_for {
+  width: 660px;
+  float: left;
+  padding: 10px;
+}
+
+/* line 5, sass/_backstage_form.scss */
+.looking_for a {
+  width: 660px;
+  float: left;
+  margin: 9px 0px 2px;
+}
+
+/* line 6, sass/_backstage_form.scss */
+.looking_for a:hover {
+  text-decoration: underline;
+}
+
+/* line 11, sass/_backstage_form.scss */
+.admin_form input[type=text],
+.admin_form select {
+  margin-bottom: 10px;
+}
+/* line 12, sass/_backstage_form.scss */
+.admin_form input[type=text] {
+  width: 670px;
+}
+/* line 13, sass/_backstage_form.scss */
+.admin_form select {
+  width: 680px;
+}
+/* line 14, sass/_backstage_form.scss */
+.admin_form label {
+  width: 680px;
+  float: left;
+  margin-top: 25px;
+}
+
+/* line 17, sass/_backstage_form.scss */
+.char_counter {
+  float: right;
+  font-weight: bold;
+}
+
+/* line 18, sass/_backstage_form.scss */
+.chars_ok {
+  color: #3498db;
+}
+
+/* line 19, sass/_backstage_form.scss */
+.chars_low {
+  color: #e72b00;
+}
+
+/* line 21, sass/_backstage_form.scss */
+.mceEditor {
+  float: left;
+}
+
+/* line 1, sass/_backstage_map.scss */
+.admin_map {
+  width: 679px;
+  height: 499px;
+  float: left;
+}
+
+/* map dimensions must be odd for acurate centering with single pixel cross hair */
+/* line 3, sass/_backstage_map.scss */
+.cross_hair {
+  width: 45px;
+  height: 45px;
+  float: left;
+  position: relative;
+  z-index: 100000;
+  margin: -272px 317px 0px;
+  /* padding:227px 327px;  */
+  background-image: url("/img/sprite.png");
+  background-position: 0px 0px;
+  pointer-events: none;
+}
+
+/* line 8, sass/_backstage_map.scss */
+#nodeform_map_panel p {
+  font-size: 0.9em;
+}
+
+/* line 10, sass/_backstage_map.scss */
+.map_button {
+  height: 14px;
+  float: left;
+  background-color: #ccc;
+  border: 1px solid #181818;
+  margin: 2px 0px;
+  padding: 5px;
+  border-radius: 2px;
+  moz-border-radius: 2px;
+  webkit-border-radius: 2px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 15, sass/_backstage_map.scss */
+.map_button:hover {
+  background-color: #181818;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* line 17, sass/_backstage_map.scss */
+.map_remove {
+  float: right;
+}
+
+/* line 18, sass/_backstage_map.scss */
+.map_remove:hover {
+  background-color: #ff3535;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* line 20, sass/_backstage_map.scss */
+.map_control_row {
+  width: 100%;
+  float: left;
+  margin-bottom: 10px;
+}
+
+/* line 21, sass/_backstage_map.scss */
+#latitude {
+  width: 200px;
+  margin: 0px 5px;
+}
+
+/* line 22, sass/_backstage_map.scss */
+#longitude {
+  width: 200px;
+  margin: 0px 5px;
+}
+
+/* line 23, sass/_backstage_map.scss */
+#map_search_field {
+  width: 565px;
+  float: right;
+}
+
+/* line 24, sass/_backstage_map.scss */
+#map_search {
+  width: 90px;
+  float: left;
+}
+
+/* line 27, sass/_backstage_map.scss */
+.latlng_label,
+.on_map {
+  float: left;
+  margin: 6px 0px 0px;
+}
+
+/* line 28, sass/_backstage_map.scss */
+.latlng_label {
+  width: 70px;
+  text-align: right;
+}
+
+/* line 29, sass/_backstage_map.scss */
+.on_map {
+  width: 80px;
+  color: #ff3535;
+}
+
+/* line 30, sass/_backstage_map.scss */
+.is_visible {
+  display: block;
+}
+
+/* line 31, sass/_backstage_map.scss */
+.is_not_visible {
+  display: none;
+}
+
+/* line 33, sass/_backstage_map.scss */
+#map_activate {
+  float: left;
+  margin: 8px 0px 0px 4px;
+}
+
+/* line 1, sass/_backstage_image_upload.scss */
+.imgareaselect-border1 {
+  background: url(border-v.gif) repeat-y left top;
+}
+
+/* line 2, sass/_backstage_image_upload.scss */
+.imgareaselect-border2 {
+  background: url(border-h.gif) repeat-x left top;
+}
+
+/* line 3, sass/_backstage_image_upload.scss */
+.imgareaselect-border3 {
+  background: url(border-v.gif) repeat-y right top;
+}
+
+/* line 4, sass/_backstage_image_upload.scss */
+.imgareaselect-border4 {
+  background: url(border-h.gif) repeat-x left bottom;
+}
+
+/* line 5, sass/_backstage_image_upload.scss */
+.imgareaselect-border1, .imgareaselect-border2, .imgareaselect-border3, .imgareaselect-border4 {
+  background-image: url("/img/image_area_border.jpg");
+}
+
+/* line 6, sass/_backstage_image_upload.scss */
+.imgareaselect-handle {
+  background-color: #fff;
+  border: solid 1px #000;
+}
+
+/* line 7, sass/_backstage_image_upload.scss */
+.imgareaselect-outer {
+  background-color: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/* line 9, sass/_backstage_image_upload.scss */
+.aim_thumb {
+  width: 180px;
+  height: 180px;
+  float: left;
+}
+
+/* line 10, sass/_backstage_image_upload.scss */
+.aim_thumb img {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 12, sass/_backstage_image_upload.scss */
+#aim_upload {
+  width: 920px;
+  float: left;
+  border: 2px solid #181818;
+  margin-bottom: 20px;
+  padding: 18px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 14, sass/_backstage_image_upload.scss */
+#aim_list {
+  width: 960px;
+  float: left;
+}
+
+/* line 16, sass/_backstage_image_upload.scss */
+.image_submit {
+  float: right;
+}
+
+/* line 17, sass/_backstage_image_upload.scss */
+#save_thumb_top {
+  margin: 0px 0px 20px;
+}
+
+/* line 18, sass/_backstage_image_upload.scss */
+#save_thumb_bottom {
+  margin: 20px 0px 0px;
+}
+
+/* line 20, sass/_backstage_image_upload.scss */
+.saves_mains_and_delete {
+  width: 960px;
+  float: left;
+}
+
+/* line 22, sass/_backstage_image_upload.scss */
+.aim_panel {
+  width: 180px;
+  height: 296px;
+  float: left;
+  border: 2px solid #888;
+  margin: 10px;
+  padding: 6px 18px 18px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 24, sass/_backstage_image_upload.scss */
+.aim_name {
+  width: 170px;
+  margin: 5px 0px;
+}
+
+/* line 27, sass/_backstage_image_upload.scss */
+.aim_remove,
+.aim_ingallery,
+.aim_main {
+  width: 100%;
+  float: left;
+  margin-bottom: 5px;
+}
+
+/* line 29, sass/_backstage_image_upload.scss */
+.gallery_mark {
+  background-color: #e4e4f8;
+}
+
+/* line 30, sass/_backstage_image_upload.scss */
+.main_mark {
+  background-color: #ffa;
+}
+
+/* line 32, sass/_backstage_image_upload.scss */
+#uploaded_image {
+  float: left;
+  border: 2px solid #181818;
+  margin: 0px 0px 20px;
+  padding: 8px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 34, sass/_backstage_image_upload.scss */
+.admin_left #save_thumb {
+  margin-top: 18px;
+}
+
+/* line 36, sass/_backstage_image_upload.scss */
+#iname {
+  width: 100%;
+  float: left;
+  margin: 10px 0px;
+}
+
+/* line 37, sass/_backstage_image_upload.scss */
+#image_name_field {
+  width: 960px;
+  float: left;
+  text-align: center;
+}
+
+/* line 38, sass/_backstage_image_upload.scss */
+#iname {
+  width: 950px;
+  font-size: 1.2em;
+}
+
+/* line 39, sass/_backstage_image_upload.scss */
+#image_message {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+/* line 40, sass/_backstage_image_upload.scss */
+#wrong_image a {
+  float: left;
+  padding-top: 5px;
+  color: #620000;
+}
+
+/* line 41, sass/_backstage_image_upload.scss */
+#wrong_image a:hover {
+  color: #ff3535;
+}
+
+/* line 43, sass/_backstage_image_upload.scss */
+#show_deletes {
+  float: right;
+  margin: 10px 0px 2px;
+  color: #620000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* line 44, sass/_backstage_image_upload.scss */
+#show_deletes:hover {
+  color: #ff3535;
+}
+
+/* line 45, sass/_backstage_image_upload.scss */
+.erow_delete {
+  float: right;
+  visibility: hidden;
+  margin: 4px 2px 4px 4px;
+  padding: 4px 7px;
+  color: #181818;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 47, sass/_backstage_image_upload.scss */
+#add_more_to_sequence {
+  float: left;
+  margin: 10px 0px 2px;
+  color: #006200;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* line 48, sass/_backstage_image_upload.scss */
+#add_more_to_sequence:hover {
+  color: #35ff35;
+}
+
+/* line 50, sass/_backstage_image_upload.scss */
+#uploaded_image .show_me {
+  display: block;
+  opacity: 1;
+}
+
+/* line 51, sass/_backstage_image_upload.scss */
+#uploaded_image .is_hidden {
+  display: none;
+  opacity: 0;
+}
+
+/* line 52, sass/_backstage_image_upload.scss */
+#uploaded_image .is_shown {
+  display: block;
+}
+
+/* line 54, sass/_backstage_image_upload.scss */
+.image_crop_tabs {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+
+/* line 55, sass/_backstage_image_upload.scss */
+.crop_tab {
+  height: 12px;
+  float: left;
+  margin: 0px 6px;
+  padding: 10px 20px;
+  background-color: #888;
+  cursor: pointer;
+  border-radius: 2px 2px 0px 0px;
+  moz-border-radius: 2px 2px 0px 0px;
+  webkit-border-radius: 2px 2px 0px 0px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 60, sass/_backstage_image_upload.scss */
+.crop_tab:hover,
+.crop_tab_selected {
+  background-color: #181818;
+}
+
+/* line 61, sass/_backstage_image_upload.scss */
+.crop_image span {
+  width: 100%;
+  float: left;
+  margin-bottom: 10px;
+}
+
+/* current events */
+/* line 3, sass/_backstage_calendar.scss */
+.event_meta_link {
+  width: 139px;
+  height: 30px;
+  float: left;
+  margin: 0px 6px 6px 0px;
+  padding: 4px 7px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 7, sass/_backstage_calendar.scss */
+.all_event_link {
+  float: left;
+  margin: -10px 0px 10px;
+  padding: 3px 7px 5px;
+  border-radius: 2px;
+  moz-border-radius: 2px;
+  webkit-border-radius: 2px;
+  cursor: pointer;
+  background-color: #888;
+  color: #fff;
+}
+
+/* line 11, sass/_backstage_calendar.scss */
+.all_event_link:hover {
+  background-color: #181818;
+}
+
+/* line 13, sass/_backstage_calendar.scss */
+.sweep_events {
+  float: left;
+  width: 100%;
+}
+
+/* line 14, sass/_backstage_calendar.scss */
+.sweep_event {
+  float: left;
+  border-radius: 2px;
+  moz-border-radius: 2px;
+  webkit-border-radius: 2px;
+  margin: -10px 5px 5px 0px;
+  padding: 7px 9px;
+}
+
+/* months (and date picker) */
+/* line 18, sass/_backstage_calendar.scss */
+.month,
+#ui-datepicker-div {
+  width: 294px;
+  float: left;
+  border: 2px solid #181818;
+  margin: 5px 6px 5px 0px;
+  padding: 9px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+/* line 22, sass/_backstage_calendar.scss */
+#admin_calendar .month {
+  height: 354px;
+}
+
+/* line 23, sass/_backstage_calendar.scss */
+#ui-datepicker-div tr {
+  width: 294px;
+  height: 40px;
+  float: left;
+}
+
+/* line 30, sass/_backstage_calendar.scss */
+.cal_cell,
+.empty_cell,
+.day_heading,
+#ui-datepicker-div th,
+#ui-datepicker-div td a,
+.ui-datepicker-current-day a,
+.ui-datepicker-unselectable {
+  width: 18px;
+  height: 10px;
+  float: left;
+  margin: 2px;
+  padding: 12px 10px 18px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+/* line 36, sass/_backstage_calendar.scss */
+.cal_cell:hover,
+#ui-datepicker-div td a:hover,
+.ui-icon:hover {
+  border: 1px solid #181818;
+  padding: 11px 9px 17px;
+  cursor: pointer;
+}
+
+/* line 40, sass/_backstage_calendar.scss */
+#ui-datepicker-div td a:active,
+.cal_cell:active,
+.ui-datepicker-current-day a,
+.ui-icon:active {
+  background-color: #181818;
+  color: #fff;
+}
+
+/* line 41, sass/_backstage_calendar.scss */
+.ui-datepicker-current-day a {
+  font-size: 1.2em;
+}
+
+/* line 42, sass/_backstage_calendar.scss */
+.ui-icon {
+  width: 40px;
+  height: 10px;
+  display: inline-block;
+  padding: 12px 10px 18px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+/* line 46, sass/_backstage_calendar.scss */
+.ui-datepicker-header {
+  width: 308px;
+  height: 40px;
+  float: left;
+}
+
+/* line 48, sass/_backstage_calendar.scss */
+.mheading,
+.ui-datepicker-title {
+  width: 174px;
+  float: left;
+  padding-top: 9px;
+  color: #181818;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+/* line 51, sass/_backstage_calendar.scss */
+#admin_calendar .mheading {
+  width: 100%;
+}
+
+/* line 53, sass/_backstage_calendar.scss */
+#admin_calendar .admincal_date_passed {
+  color: #888;
+  background-color: #f0f0f0;
+  opacity: 0.6;
+}
+
+/* line 54, sass/_backstage_calendar.scss */
+#admin_calendar .admincal_date_passed:hover {
+  border: 1px solid #fff;
+  cursor: default;
+}
+
+/* line 56, sass/_backstage_calendar.scss */
+.marked {
+  padding: 11px 9px 17px;
+  font-weight: bold;
+}
+
+/* line 57, sass/_backstage_calendar.scss */
+.marked span {
+  border-radius: 1px;
+  moz-border-radius: 1px;
+  webkit-border-radius: 1px;
+}
+
+/* event sequence form */
+/* line 60, sass/_backstage_calendar.scss */
+#event {
+  width: 780px;
+  z-index: 20;
+  margin: 0px 79px;
+  border: 1px solid #777;
+  padding: 9px;
+  background-color: #f7f7f7;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 0px 0px 50px 2px #181818;
+  -webkit-box-shadow: 0px 0px 50px 2px #181818;
+  box-shadow: 0px 0px 50px 2px #181818;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* event form */
+/* line 63, sass/_backstage_calendar.scss */
+#event_date {
+  width: 780px;
+  float: left;
+  border-bottom: 2px solid #888;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  color: #181818;
+  font-size: 2.0em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 64, sass/_backstage_calendar.scss */
+#new_event_header {
+  width: 770px;
+  height: 30px;
+  float: left;
+  margin-bottom: 5px;
+  padding: 5px;
+  color: #fff;
+  font-family: Rationale;
+  font-size: 2.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 65, sass/_backstage_calendar.scss */
+#balance_spacer {
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+
+/* line 66, sass/_backstage_calendar.scss */
+#chos_date {
+  width: 710px;
+  float: left;
+}
+
+/* line 67, sass/_backstage_calendar.scss */
+#close_button {
+  width: 30px;
+  height: 30px;
+  float: right;
+  background-color: #fff;
+  background-image: url("/img/sprite.png");
+  background-position: -135px -0px;
+  cursor: pointer;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+}
+
+/* line 68, sass/_backstage_calendar.scss */
+#close_button:hover {
+  background-position: -135px -30px;
+}
+
+/* line 69, sass/_backstage_calendar.scss */
+.evdef_heading {
+  width: 780px;
+  float: left;
+  border-bottom: 1px solid #888;
+  margin-bottom: 9px;
+  padding: 5px 0px;
+  color: #fff;
+  font-family: Rationale;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 71, sass/_backstage_calendar.scss */
+#event select {
+  float: left;
+  border: 1px solid #888;
+  padding: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 72, sass/_backstage_calendar.scss */
+#event input {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 74, sass/_backstage_calendar.scss */
+#basic_details_heading {
+  margin-bottom: 2px;
+}
+
+/* line 75, sass/_backstage_calendar.scss */
+.basic_heading {
+  width: 257px;
+  height: 25px;
+  float: left;
+  border-bottom: 1px solid #ccc;
+  margin: 2px 0px;
+  padding: 7px 0px 0px 3px;
+}
+
+/* line 76, sass/_backstage_calendar.scss */
+.basic_field {
+  width: 520px;
+  height: 32px;
+  float: right;
+  border-bottom: 1px solid #ccc;
+  margin: 2px 0px;
+}
+
+/* line 77, sass/_backstage_calendar.scss */
+#name {
+  width: 510px;
+}
+
+/* line 78, sass/_backstage_calendar.scss */
+#price, #spaces {
+  width: 100px;
+}
+
+/* line 79, sass/_backstage_calendar.scss */
+#time_heading {
+  height: 71px;
+  padding-top: 12px;
+}
+
+/* line 80, sass/_backstage_calendar.scss */
+#time_field {
+  height: 83px;
+}
+
+/* line 81, sass/_backstage_calendar.scss */
+#colour_heading {
+  height: 31px;
+  padding-top: 12px;
+}
+
+/* line 82, sass/_backstage_calendar.scss */
+#colour_field {
+  height: 43px;
+}
+
+/* line 84, sass/_backstage_calendar.scss */
+#exclusivity {
+  display: none;
+}
+
+/* line 85, sass/_backstage_calendar.scss */
+#exclusive {
+  float: left;
+  padding-top: 7px;
+  display: none;
+}
+
+/* line 86, sass/_backstage_calendar.scss */
+#exclusive input {
+  margin: 1px 5px 0px 0px;
+}
+
+/* line 88, sass/_backstage_calendar.scss */
+#until_date, #from_date {
+  width: 150px;
+}
+
+/* line 91, sass/_backstage_calendar.scss */
+#duration_value {
+  width: 100px;
+}
+
+/* line 93, sass/_backstage_calendar.scss */
+#repeat_choice {
+  width: 100%;
+  float: left;
+  margin-bottom: 8px;
+}
+
+/* line 94, sass/_backstage_calendar.scss */
+#repeat_choice input {
+  margin: 1px 7px 0px 0px;
+}
+
+/* line 95, sass/_backstage_calendar.scss */
+#date_seperator {
+  float: left;
+  margin: 7px 10px 0px;
+}
+
+/* line 96, sass/_backstage_calendar.scss */
+#repeat, label, input {
+  float: left;
+}
+
+/* line 97, sass/_backstage_calendar.scss */
+#repeat_panel {
+  width: 780px;
+  height: 0px;
+  float: left;
+}
+
+/* line 98, sass/_backstage_calendar.scss */
+#repeat_instr {
+  width: 780px;
+  float: left;
+  margin: 0px 0px 5px;
+}
+
+/* line 99, sass/_backstage_calendar.scss */
+.repeat_panel {
+  float: left;
+  padding: 10px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 100, sass/_backstage_calendar.scss */
+#daily_repeats {
+  width: 90px;
+  float: left;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: #ccf;
+}
+
+/* line 101, sass/_backstage_calendar.scss */
+#daily_times {
+  width: 90px;
+  float: left;
+}
+
+/* line 102, sass/_backstage_calendar.scss */
+.daily_column {
+  width: 100px;
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 103, sass/_backstage_calendar.scss */
+.daily_check {
+  width: 100px;
+  float: left;
+}
+
+/* line 104, sass/_backstage_calendar.scss */
+#weekly_repeats {
+  width: 95px;
+  margin-right: 10px;
+  background-color: #cfc;
+}
+
+/* line 105, sass/_backstage_calendar.scss */
+.weekly_check {
+  width: 95px;
+  float: left;
+}
+
+/* line 106, sass/_backstage_calendar.scss */
+#fortnightly_repeats {
+  width: 120px;
+  margin-right: 10px;
+  background-color: #fcc;
+}
+
+/* line 107, sass/_backstage_calendar.scss */
+.fortnightly_check {
+  width: 120px;
+  float: left;
+}
+
+/* line 108, sass/_backstage_calendar.scss */
+#monthly_repeats {
+  width: 120px;
+  background-color: #ffc;
+}
+
+/* line 109, sass/_backstage_calendar.scss */
+.monthly_check {
+  width: 120px;
+  float: left;
+}
+
+/* line 111, sass/_backstage_calendar.scss */
+#event_count {
+  width: 780px;
+  float: left;
+  border-top: 1px solid #888;
+  padding: 10px 0px 3px;
+}
+
+/* line 113, sass/_backstage_calendar.scss */
+#preview_calendar {
+  width: 780px;
+  height: 100px;
+  float: left;
+  border-top: 2px solid #888;
+  margin-top: 10px;
+  padding-top: 7px;
+}
+
+/* line 115, sass/_backstage_calendar.scss */
+#colour_strip {
+  width: 100%;
+  float: left;
+  margin: 5px 0px;
+}
+
+/* line 116, sass/_backstage_calendar.scss */
+.colour_choice {
+  width: 13px;
+  height: 13px;
+  float: left;
+  border: 1px solid #888;
+  margin-right: 5px;
+  padding: 8px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 117, sass/_backstage_calendar.scss */
+.colour_choice input {
+  margin: 0px;
+}
+
+/* line 119, sass/_backstage_calendar.scss */
+#event_submit {
+  position: relative;
+  z-index: 100;
+  margin: 10px 0px 0px;
+}
+
+/* event edit form */
+/* line 122, sass/_backstage_calendar.scss */
+#master_erow {
+  border: 1px solid #181818;
+  margin: 10px 0px -15px;
+}
+
+/* line 123, sass/_backstage_calendar.scss */
+.eedit_yheading, .eedit_mheading {
+  width: 948px;
+  float: left;
+  padding: 5px;
+  color: #181818;
+  font-family: Rationale;
+  font-size: 2.0em;
+  font-weight: bold;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 124, sass/_backstage_calendar.scss */
+.eedit_yheading {
+  border: 1px solid #181818;
+  margin: 25px 0px 5px;
+  font-size: 3.0em;
+  letter-spacing: 0.2em;
+  text-align: center;
+  background-color: #ddd;
+}
+
+/* line 125, sass/_backstage_calendar.scss */
+.eedit_mheading {
+  border: 1px solid #686868;
+  margin: 0px 0px 5px;
+}
+
+/* line 126, sass/_backstage_calendar.scss */
+.sum_data {
+  float: right;
+}
+
+/* line 127, sass/_backstage_calendar.scss */
+.erow, .row_past {
+  width: 948px;
+  height: 30px;
+  float: left;
+  margin-bottom: 2px;
+  padding: 2px 5px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 128, sass/_backstage_calendar.scss */
+.row_past {
+  border: 1px solid #ccc;
+  color: #666;
+  font-weight: bold;
+}
+
+/* line 129, sass/_backstage_calendar.scss */
+.erow {
+  border: 1px solid #ffae66;
+}
+
+/* .erow_break { width:100%; height:1px; float:left; margin-bottom:5px; background-color:#aaa; } */
+/* line 132, sass/_backstage_calendar.scss */
+#ewarning {
+  width: 100%;
+  float: left;
+  margin: 5px 0px;
+}
+
+/* line 133, sass/_backstage_calendar.scss */
+#event_sequence_form .form_field {
+  margin-bottom: 0px;
+}
+
+/* line 134, sass/_backstage_calendar.scss */
+#eheading_boxes {
+  width: 960px;
+  float: left;
+  border-top: 1px solid #181818;
+  border-bottom: 1px solid #484848;
+  padding-bottom: 10px;
+}
+
+/* line 135, sass/_backstage_calendar.scss */
+.erow_date, .erow_time, .epound, .erow_sold, .ent, .ept, .est {
+  padding-top: 7px;
+}
+
+/* line 136, sass/_backstage_calendar.scss */
+.erow_date {
+  width: 110px;
+  float: left;
+}
+
+/* line 137, sass/_backstage_calendar.scss */
+.ename, .ename_master, .ent {
+  width: 400px;
+  float: left;
+}
+
+/* line 138, sass/_backstage_calendar.scss */
+.ent, .ept, .est {
+  margin-right: 10px;
+}
+
+/* line 139, sass/_backstage_calendar.scss */
+.eprice, .eprice_master, .ept {
+  width: 70px;
+  float: left;
+  margin-right: 5px;
+}
+
+/* line 140, sass/_backstage_calendar.scss */
+.erp_past, .ersp_past {
+  padding: 7px 5px 5px;
+}
+
+/* line 141, sass/_backstage_calendar.scss */
+.ersp_past {
+  margin-right: 5px;
+}
+
+/* line 142, sass/_backstage_calendar.scss */
+.extra_space {
+  margin-right: 15px;
+}
+
+/* line 143, sass/_backstage_calendar.scss */
+.epound {
+  float: left;
+  margin: 0px 4px;
+}
+
+/* line 144, sass/_backstage_calendar.scss */
+.erow_time {
+  width: 45px;
+  float: left;
+  margin: 0px 5px;
+  text-align: center;
+}
+
+/* line 145, sass/_backstage_calendar.scss */
+.espaces, .espaces_master, .erow_sold {
+  margin-right: 5px;
+}
+
+/* line 146, sass/_backstage_calendar.scss */
+.espaces, .espaces_master, .est {
+  float: left;
+  width: 50px;
+  text-align: center;
+}
+
+/* line 147, sass/_backstage_calendar.scss */
+.erow_sold {
+  float: left;
+  width: 50px;
+  margin-left: 5px;
+}
+
+/* line 149, sass/_backstage_calendar.scss */
+.month_open, .month_close {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-right: 5px;
+  background-color: #fff;
+  background-image: url("/img/sprite.png");
+  cursor: pointer;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+}
+
+/* line 150, sass/_backstage_calendar.scss */
+.month_open {
+  background-position: -75px -30px;
+}
+
+/* line 151, sass/_backstage_calendar.scss */
+.month_close {
+  background-position: -45px -30px;
+}
+
+/* line 152, sass/_backstage_calendar.scss */
+.month_open:hover {
+  background-position: -75px -30px;
+}
+
+/* line 153, sass/_backstage_calendar.scss */
+.month_close:hover {
+  background-position: -45px -30px;
+}
+
+/* line 155, sass/_backstage_calendar.scss */
+.mes {
+  margin-left: 15px;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+/* general styles */
+/* readable font */
+/* line 23, sass/backstage.scss */
+#admin {
+  font-family: arial;
+}
+
+/* hide node tabs for admin pages incase db field value is wrong */
+/* line 26, sass/backstage.scss */
+#admin #node_tabs {
+  display: none;
+}
+
+/* left panel */
+/* line 29, sass/backstage.scss */
+.admin_left {
+  width: 680px;
+  float: left;
+  border-right: 1px solid #181818;
+  padding-right: 19px;
+}
+
+/* line 36, sass/backstage.scss */
+.admin_left h2,
+#admin_image h2,
+#admin_calendar h2,
+#manual h2,
+.mheading {
+  width: 100%;
+  float: left;
+  margin: 0px;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+/* line 40, sass/backstage.scss */
+.ad_heading_text {
+  float: left;
+  padding: 5px 8px 3px;
+  background-color: #181818;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* line 42, sass/backstage.scss */
+.ad_heading_text:hover {
+  background-color: #181818;
+}
+
+/* line 43, sass/backstage.scss */
+.panel {
+  width: 100%;
+  float: left;
+  border-top: 1px solid #181818;
+  padding-top: 20px;
+}
+
+/* line 46, sass/backstage.scss */
+.empty_admin_panel {
+  width: 100%;
+  float: left;
+  color: #181818;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 47, sass/backstage.scss */
+.panel_details {
+  width: 100%;
+  float: left;
+  margin: 0px 0px 20px;
+}
+
+/* line 49, sass/backstage.scss */
+.admin_left .submit,
+#admin_image .submit {
+  margin: 0px;
+}
+
+/* line 52, sass/backstage.scss */
+#admin_image,
+#admin_calendar {
+  width: 960px;
+}
+
+/* line 54, sass/backstage.scss */
+#admin_calendar .panel_details {
+  width: 966px;
+}
+
+/* line 55, sass/backstage.scss */
+#previous_panel .panel {
+  width: 960px;
+}
+
+/* line 56, sass/backstage.scss */
+#previous_heading {
+  background-color: #888;
+  opacity: 0.8;
+}
+
+/* line 57, sass/backstage.scss */
+#previous_heading:hover {
+  opacity: 1.0;
+}
+
+/* line 60, sass/backstage.scss */
+.panel_open,
+.panel_close {
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin: 0px 0px 20px 0px;
+  cursor: pointer;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  background-color: #181818;
+}
+
+/* line 63, sass/backstage.scss */
+.panel_open {
+  background-position: -75px -30px;
+}
+
+/* line 65, sass/backstage.scss */
+.panel_open:hover,
+.panel_close:hover {
+  opacity: 1;
+}
+
+/* line 66, sass/backstage.scss */
+.panel_close {
+  background-position: -45px -30px;
+}
+
+/* line 67, sass/backstage.scss */
+.panel_closed {
+  display: none;
+  opacity: 0;
+}
+
+/* line 69, sass/backstage.scss */
+#previous_show {
+  background-color: #888;
+}
+
+/* line 71, sass/backstage.scss */
+h3 {
+  float: left;
+  padding: 20px 0px 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* line 74, sass/backstage.scss */
+#local_storage_message {
+  width: 209px;
+  display: none;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+/* right instructions */
+/* line 84, sass/backstage.scss */
+.admin_instructions {
+  width: 240px;
+  float: left;
+  position: relative;
+  z-index: 1;
+  border-left: 1px solid #181818;
+  margin-left: -1px;
+  padding-left: 19px;
+}
+
+/* line 85, sass/backstage.scss */
+.admin_instructions p {
+  font-size: 0.9em;
+}
+
+/* line 87, sass/backstage.scss */
+.adpanel {
+  width: 930px;
+  float: left;
+  margin: 0px 0px 10px 0px;
+}
+
+/* line 88, sass/backstage.scss */
+.adinst_panel {
+  width: 920px;
+  float: left;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: #f0f0f7;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+/* line 89, sass/backstage.scss */
+.adaction_panel {
+  width: 930px;
+  float: left;
+  background-color: #f7f7f7;
+}
+
+/* line 90, sass/backstage.scss */
+.ad_icon {
+  width: 24px;
+  height: 24px;
+  float: left;
+  background-image: url("/img/sprite.png");
+  opacity: 0.5;
+}
+
+/* line 91, sass/backstage.scss */
+.ad_icon:hover {
+  opacity: 1.0;
+}
+
+/* line 92, sass/backstage.scss */
+.ad_edit_buttons {
+  float: right;
+}
+
+/* line 94, sass/backstage.scss */
+#show_deletes {
+  float: right;
+  margin: 10px 0px 2px;
+  color: #620000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* line 95, sass/backstage.scss */
+#show_deletes:hover {
+  color: #ff3535;
+}
+
+/* line 97, sass/backstage.scss */
+.erow_delete,
+.ad_ndelete {
+  float: right;
+  visibility: hidden;
+  margin: 0px 0px 0px 4px;
+  padding: 4px 7px;
+  color: #181818;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 99, sass/backstage.scss */
+.ad_ndelete_space {
+  width: 56px;
+  height: 22px;
+  float: right;
+}
+
+/* line 101, sass/backstage.scss */
+#add_more_to_sequence {
+  float: left;
+  margin: 10px 0px 2px;
+  color: #006200;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* line 102, sass/backstage.scss */
+#add_more_to_sequence:hover {
+  color: #35ff35;
+}
+
+/* line 104, sass/backstage.scss */
+#adnode_header_row #show_deletes {
+  float: right;
+  margin: 0px;
+}
+
+/* NODE FORM */
+/* CONTACT LIST */
+/* line 109, sass/backstage.scss */
+.cl {
+  width: 678px;
+  float: left;
+  border: 1px solid #888;
+  margin-bottom: 20px;
+  background-color: #f7f7f7;
+}
+
+/* line 112, sass/backstage.scss */
+.cl div {
+  padding-left: 10px;
+}
+
+/* line 113, sass/backstage.scss */
+.cl_heading {
+  width: 658px;
+  padding: 10px;
+  float: left;
+  background-color: #888;
+  color: #fff;
+}
+
+/* line 114, sass/backstage.scss */
+.cl_time {
+  float: right;
+  border: none;
+  padding: 4px 6px;
+}
+
+/* line 115, sass/backstage.scss */
+.cl_name {
+  float: left;
+  border: none;
+  padding: 4px 6px 4px 0px;
+}
+
+/* line 116, sass/backstage.scss */
+.cl_contact {
+  width: 668px;
+  float: left;
+  border-bottom: 1px solid #bbb;
+  padding: 10px 0px 10px 10px;
+}
+
+/* line 117, sass/backstage.scss */
+.cl_message {
+  width: 668px;
+  float: left;
+  padding: 10px 0px;
+}
+
+/* line 119, sass/backstage.scss */
+.responded_clicker {
+  width: 104px;
+  float: right;
+  border-radius: 3px;
+  moz-border-radius: 2px;
+  webkit-border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* line 123, sass/backstage.scss */
+.responded {
+  padding: 4px 6px 5px;
+  background-color: #888;
+  color: #eeee00;
+}
+
+/* line 126, sass/backstage.scss */
+.unresponded {
+  border: 1px solid #008000;
+  padding: 3px 5px 4px;
+  background-color: #e7e7e7;
+  color: #008000;
+}
+
+/* line 129, sass/backstage.scss */
+.unresponded:hover {
+  background-color: #fff;
+}
+
+/* line 131, sass/backstage.scss */
+#unresponded_panel {
+  margin-bottom: 0px;
+}
+
+/* line 132, sass/backstage.scss */
+#unresponded_panel .submit {
+  margin-bottom: 20px;
+}
+
+/* MANUAL */
+/* line 135, sass/backstage.scss */
+#mantcn_panel a {
+  width: 100%;
+  float: left;
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+
+/* line 136, sass/backstage.scss */
+#mantcn_panel span {
+  width: 100%;
+  float: left;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+}
+
+/* line 138, sass/backstage.scss */
+.man_view {
+  width: 930px;
+  float: left;
+  margin-bottom: 2px;
+  padding: 5px 15px 5px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.8em;
+}
+
+/* line 141, sass/backstage.scss */
+.man_view pre {
+  float: left;
+}
+
+/* line 145, sass/backstage.scss */
+#head_open,
+#head_close,
+#page_open,
+#page_close {
+  background-color: #bfc1ff;
+  color: #0004aa;
+}
+
+/* line 152, sass/backstage.scss */
+#header_open,
+#header_close,
+#content_open,
+#content_close,
+#footer_open,
+#footer_close,
+#admin_nav {
+  background-color: #e2bfff;
+  color: #6700bb;
+}
+
+/* line 154, sass/backstage.scss */
+#node_tabs,
+.node_element {
+  background-color: #fbbfff;
+  color: #880093;
+}
+
+/* line 156, sass/backstage.scss */
+#central_panels {
+  width: 962px;
+}
+
+/* line 157, sass/backstage.scss */
+.node_element {
+  float: left;
+  padding: 10px 15px;
+  margin: 0px 2px 2px 0px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+/* line 160, sass/backstage.scss */
+.width_135 {
+  width: 105px;
+}
+
+/* line 161, sass/backstage.scss */
+.width_136 {
+  width: 106px;
+}
+
+/* line 163, sass/backstage.scss */
+.man_view h3 {
+  float: right;
+}
+
+/* MISCELLANEOUS */
+/* line 166, sass/backstage.scss */
+.admisc_link {
+  width: 100%;
+  float: left;
+  margin-bottom: 10px;
+}
+
+/* NEWSLETTER SIGNUPS */
+/* line 169, sass/backstage.scss */
+#signup_list {
+  width: 100%;
+  float: left;
+  margin: 15px 0px;
+}
+
+/* line 170, sass/backstage.scss */
+.signup_row {
+  width: 100%;
+  float: left;
+  margin: 5px 0px;
+}
+
+/* line 171, sass/backstage.scss */
+.signup_email {
+  width: 80%;
+  float: left;
+}
+
+/* line 172, sass/backstage.scss */
+.signup_time {
+  width: 20%;
+  float: rigth;
+}
+
+/* line 173, sass/backstage.scss */
+.signup_count {
+  width: 45px;
+  float: left;
+}
+
+/* line 174, sass/backstage.scss */
+.signup_spacer {
+  width: 100%;
+  height: 1px;
+  float: left;
+  margin: 6px 0px;
+  background-color: #888;
+}
+
+/* NODE FORM */
+/* line 177, sass/backstage.scss */
+#name_warning {
+  width: 100%;
+  float: left;
+  margin: 5px 0px;
+  font-weight: bold;
+}
+
+/* line 178, sass/backstage.scss */
+#node_html_parent {
+  float: left;
+}
+
+/* line 180, sass/backstage.scss */
+.atag_dropdown {
+  width: 696px;
+  height: 15px;
+  float: left;
+  border: 1px solid #888;
+  margin-bottom: 2px;
+  padding: 2px 1px 1px;
+}
+
+/* line 182, sass/backstage.scss */
+.unused {
+  border: 1px solid #888;
+}
+
+/* line 183, sass/backstage.scss */
+.unused:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+
+/* line 184, sass/backstage.scss */
+.used {
+  opacity: 0.4;
+}
+
+/* CALENDAR */
+/* add events drop down form */
+/* calendar */

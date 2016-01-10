@@ -1,0 +1,51 @@
+#vid_player { width:$site_content_wide; height:455px; }
+	.jw_controlbar { 
+		width:$site_content_wide; height:30px; float:left;
+		margin:2px 0px 20px; }
+	.jw_controlbar .jw_controlbar { @extend %noticable; cursor:pointer; }
+	.play,
+	.pause,
+	.stop,
+	.fullscreen,
+	.mute,
+	.unmute,
+	.volume { width:30px; height:30px; float:left; }
+	.pause { display:none; }
+	.currenttime,
+	.totaltime { 
+		width:80px; height:18px; float:left; 
+		padding:6px 0px;
+		color:#fff; font-size:1.2rem; font-weight:bold; text-align:center; }
+	.scrubber { width:$site_content_wide - 340; float:left; }
+		.scrubber .ui-slider-range { 
+			height:30px; float:left;
+			@extend %highlight_standout; }
+        .scrubber .ui-slider-handle { height:58px; float:left; cursor:pointer; }
+    
+
+	.jw_controlbar .currenttime,
+	.jw_controlbar .totaltime,
+	.jw_controlbar .scrubber { background-image:none; }
+	
+	.play { background-position:-165px -0px; }
+	.play:hover { background-position:-165px -30px; @extend %highlight_standout; }
+
+	.pause { background-position:-195px -0px; }
+	.pause:hover { background-position:-195px -30px; @extend %highlight_standout; }
+
+	.stop { background-position:-225px -0px; }
+	.stop:hover { background-position:-225px -30px; @extend %highlight_standout; }
+
+	.fullscreen { background-position:0px -0px; }
+	.fullscreen:hover { background-position:0px -0px; }
+
+	.mute { background-position:0px -0px; }
+	.mute:hover { background-position:0px -0px; }   
+
+	.unmute { background-position:0px -0px; }
+	.unmute:hover { background-position:0px -0px; }    
+
+.another_video { 
+	width:$site_content_wide; float:left;
+	margin-bottom:10px;
+	text-align:right; }	
